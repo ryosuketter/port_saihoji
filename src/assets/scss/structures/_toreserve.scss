@@ -1,0 +1,280 @@
+.st-ToReserve {
+  background: url("../img/toreserve_bgimg.png")no-repeat center top 0;
+  //fixedはスクロール時にレイヤーを感じさせるやつ
+  //left bottom 背景画像を左下スタートで固定 http://kumacrow.blog111.fc2.com/blog-entry-296.html
+  background-size: cover;
+  //領域全体を覆う
+  height: 300px;
+
+  .st-ToReserve_BtnWrapper {
+    padding-top: 137px;
+    text-align: center;
+
+    .st-ToReserve_Btn {
+      position: relative;
+
+      background-color: #111111;
+      border: 2px solid #000000;
+      color: #ffffff;
+      font-size: 19px;
+      letter-spacing: 6px;
+      padding: 46px 224px;
+      text-decoration: none;
+      transition: 0.2s;
+      width: 100%;
+
+      &:before, &:after {
+        position: absolute;
+
+        border: 2px solid transparent;
+        content: "";
+        height: 0;
+        width: 0;
+        z-index: $Z_TO_RESERVE_BTN;
+      }
+
+      &:before {
+        top: -2px;
+        left: -2px;
+      }
+
+      &:after {
+        right: -2px;
+        bottom: -2px;
+      }
+
+      &:hover {
+        // background-color: rgba(#000000, 0.87);
+        animation-duration: 1.5s;
+        animation-name: fade;
+
+        &:before, &:after {
+          height: 104%;
+          width: 100.7%;
+        }
+
+        &:before {
+          border-bottom-color: #ffffff;
+          border-left-color: #ffffff;
+          transition: height 0.3s, width 0.3s 0.3s;
+        }
+        &:after {
+          border-right-color: #ffffff;
+          border-top-color: #ffffff;
+          transition: height 0.3s, width 0.3s 0.3s;
+        }
+      }
+
+      @keyframes fade {
+        0% {
+          background-color: rgba(#000000, 0.87);
+        }
+
+        50% {
+          background-color: rgba(#000000, 0.21);
+        }
+
+        100% {
+          background-color: rgba(#000000, 0.9);
+        }
+      }
+
+      svg, .arrow-Img {
+        position: absolute;
+        top: 51px;
+        right: 187px;
+
+        transition: 0.2s;
+      }
+
+      &:hover {
+        svg, .arrow-Img {
+          right: 181px;
+        }
+      }
+    }
+  }
+}
+
+
+@include max-screen($BREAK_POINT_TABLET) {
+  .st-ToReserve {
+    background: url("../img/toreserve_bgimg.png")no-repeat center top 0;
+    //fixedはスクロール時にレイヤーを感じさせるやつ
+    //left bottom 背景画像を左下スタートで固定 http://kumacrow.blog111.fc2.com/blog-entry-296.html
+    background-size: cover;
+    //領域全体を覆う
+    height: 100%;
+
+    .st-ToReserve_BtnWrapper {
+      padding-bottom: 38px;
+      padding-top: 33px;
+      text-align: center;
+
+      .st-ToReserve_Btn {
+        background-color: #111111;
+        color: #ffffff;
+        display: block;
+        font-size: 16px;
+        height: 73px;
+        letter-spacing: 2px;
+        margin: 0 auto;
+        padding: 22px;
+        text-decoration: none;
+        width: 310px;
+
+        &:before, &:after {
+          position: absolute;
+
+          border: 0 solid transparent;
+          content: "";
+          height: 0;
+          width: 0;
+          z-index: $Z_TO_RESERVE_BTN;
+        }
+
+        &:before {
+          top: 0;
+          left: 0;
+        }
+
+        &:after {
+          right: 0;
+          bottom: 0;
+        }
+
+        &:hover {
+          animation-name: fadeSP;
+
+          &:before, &:after {
+            height: 0;
+            width: 0;
+          }
+
+          &:before {
+            transition: height 0.3s, width 0.3s 0.3s;
+          }
+          &:after {
+            transition: height 0.3s, width 0.3s 0.3s;
+          }
+        }
+
+        @keyframes fade {
+          from {
+            background-color: rgba(#000000, 0.87);
+          }
+
+          to {
+            background-color: rgba(#000000, 0.87);
+          }
+        }
+
+        svg, .arrow-Img {
+          position: absolute;
+          top: 32px;
+          right: 26px;
+
+          transition: 0.2s;
+          width: 8%;
+        }
+
+        &:hover {
+          svg, .arrow-Img {
+            right: 20px;
+          }
+        }
+      }
+    }
+  }
+}
+
+@include max-screen($BREAK_POINT_SP_iPhone6) {
+  .st-ToReserve {
+    background: url("../img/toreserve_bgimg.png")no-repeat center top 0;
+    //fixedはスクロール時にレイヤーを感じさせるやつ
+    //left bottom 背景画像を左下スタートで固定 http://kumacrow.blog111.fc2.com/blog-entry-296.html
+    background-size: cover;
+    //領域全体を覆う
+    height: 100%;
+
+    .st-ToReserve_BtnWrapper {
+      padding-bottom: 38px;
+      padding-top: 28px;
+      text-align: center;
+
+      .st-ToReserve_Btn {
+        background-color: #111111;
+        color: #ffffff;
+        display: block;
+        font-size: 14px;
+        height: 64px;
+        letter-spacing: 1.5px;
+        margin: 0 auto;
+        padding: 20px;
+        text-decoration: none;
+        width: 264px;
+
+        &:before, &:after {
+          position: absolute;
+
+          border: 0 solid transparent;
+          content: "";
+          height: 0;
+          width: 0;
+          z-index: $Z_TO_RESERVE_BTN;
+        }
+
+        &:before {
+          top: 0;
+          left: 0;
+        }
+
+        &:after {
+          right: 0;
+          bottom: 0;
+        }
+
+        &:hover {
+          animation-name: fadeSP;
+
+          &:before, &:after {
+            height: 0;
+            width: 0;
+          }
+
+          &:before {
+            transition: height 0.3s, width 0.3s 0.3s;
+          }
+          &:after {
+            transition: height 0.3s, width 0.3s 0.3s;
+          }
+        }
+
+        @keyframes fade {
+          from {
+            background-color: rgba(#000000, 0.87);
+          }
+
+          to {
+            background-color: rgba(#000000, 0.87);
+          }
+        }
+
+        svg, .arrow-Img {
+          position: absolute;
+          top: 27px;
+          right: 24px;
+
+          transition: 0.2s;
+          width: 8%;
+        }
+
+        &:hover {
+          svg, .arrow-Img {
+            right: 14px;
+          }
+        }
+      }
+    }
+  }
+}

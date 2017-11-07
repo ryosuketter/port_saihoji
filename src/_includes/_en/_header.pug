@@ -1,0 +1,20 @@
+//- header
+mixin header(path)
+  header.st-Header_Wrapper
+    h1.st-Header_Logo
+      a(href="top.html")
+        img(src=path + 'assets/img/header/header-logo.png', alt='logo')
+    nav.st-Header_Nav
+      ul.st-Header_Ul
+        li.st-Header_Li
+          a(href="about.html") #{about}
+        li.st-Header_Li
+          a(href="admission.html") #{admission}
+        li.st-Header_Li
+          a(href="information.html") #{info}
+        li.st-Header_Li
+          a(href="access.html") #{access}
+        li.st-Header_Li
+          a(href="reservation.html", onclick="ga('send', 'event', 'pc_head', 'click', 'to_reserve');") #{reserve}
+
+//- /header

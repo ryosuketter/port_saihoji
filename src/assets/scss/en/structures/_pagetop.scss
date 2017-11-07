@@ -1,0 +1,82 @@
+// 役割をわかりやすくするために、ヘッダー・フッターのコンポーネントにはst-をプレフィックスにつける（p142）
+
+// st-pagetop
+
+.st-PageTop {
+  position: relative;
+
+  background-color: #ffffff;
+  text-align: center;
+  transition: 0.6s;
+
+  .st-PageTop_Line {
+    position: absolute;
+    bottom: 69px;
+    left: 50%;
+
+    background-color: #111111;
+    display: block;
+    height: 53px;
+    transition: 0.4s;
+    width: 1px;
+  }
+
+  a {
+    display: block;
+    font-weight: 600;
+    height: 92px;
+    letter-spacing: 1.2px;
+    padding-top: 35px;
+    text-decoration: none;
+    transition: 0.4s;
+    width: 100%;
+  }
+  &:hover {
+    // background-color: #e6e4e4;
+    .st-PageTop_Line {
+      // top: -36px;
+      height: 33px;
+    }
+    a {
+      color: $Yellow;
+    }
+  }
+}
+
+@include max-screen($BREAK_POINT_TABLET) {
+  .st-PageTop {
+    position: relative;
+
+    background-color: #ffffff;
+    // padding: 35px 0 36px;
+    text-align: center;
+
+    .st-PageTop_Line {
+      position: absolute;
+      bottom: 32px;
+      left: 50%;
+
+      background-color: #111111;
+      display: block;
+      height: 27px;
+      width: 1px;
+    }
+
+    a {
+      display: block;
+      font-size: 12px;
+      font-weight: 600;
+      height: 41px;
+      letter-spacing: 1.2px;
+      padding-top: 11px;
+      text-decoration: none;
+      width: 100%;
+    }
+    &:hover {
+      // background-color: #e6e4e4;
+      .st-PageTop_Line {
+        height: 17px;
+      }
+    }
+  }
+}

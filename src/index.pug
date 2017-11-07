@@ -1,0 +1,54 @@
+extend _includes/_layout_index
+append variables
+  //- Required
+  - var pageTitle= "西芳寺 | 苔寺";
+  - var pageDescription= "西芳寺のサイトです。拝観案内、予約方法、交通アクセスなどをご紹介しています。";
+  - var pageKeywords= "西芳寺,苔寺,京都,アクセス,予約,申し込み";
+  //- Optional
+  - var pageOgpTitle= "西芳寺 | 苔寺";
+  //- - var pageOgpImage= site.ogpImage
+  - var pageOgpType= "website";
+  //- Not modified
+  - var pageUrl= "index.html";
+  - var lang= "ja";
+
+block content
+  //- contents
+  .opening-Mv_Wrapper
+    .opening-Mv
+      .opening-Mv_Inner
+        .opening-Mv_TxtAllWrapper
+          .opening-Mv_TxtWrapper
+            .opening-Mv_Txt.opening_fadein.fadein1
+              img(src='assets/img/opening/copy_01.png', alt='西芳寺 コピー', class="opening-Copy_Img")
+          .opening-Mv_TxtWrapper
+            .opening-Mv_Txt.opening_fadein.fadein2
+              img(src='assets/img/opening/copy_02.png', alt='西芳寺 コピー', class="opening-Copy_Img")
+          .opening-Mv_TxtWrapper
+            .opening-Mv_Txt.opening_fadein.fadein3
+              img(src='assets/img/opening/copy_03.png', alt='西芳寺 コピー', class="opening-Copy_Img")
+          .opening-Mv_TxtWrapper
+            .opening-Mv_Txt.opening_fadein.fadein4
+              img(src='assets/img/opening/copy_04.png', alt='西芳寺 コピー', class="opening-Copy_Img")
+        .opening-Mv_TtlWrapper.opening_fadein.fadein5
+          img(src='assets/img/opening/opening-title.png', alt='西芳寺', class="opening-Mv_TtlImg")
+          .opening-Mv_SubTxtWrapper
+            p.opening-Mv_SubTxt Welcome to the SAIHOJI.
+            p.opening-Mv_SubTxt Please select your language.
+        .opening-Mv_TtlWrapperSP
+          img(src='assets/img/opening/opening-title_sp.png', alt='西芳寺', class="opening-Mv_TtlImgSP")
+          .opening-Mv_SubTxtWrapperSP
+            p.opening-Mv_SubTxtSP Welcome to the SAIHOJI.
+            p.opening-Mv_SubTxtSP Please select your language.
+        .opening-Mv_BtnWrapper.opening_fadein.fadein6
+          a(href="top.html").opening-Mv_Btn 日本語
+            include _includes/_arrow_white
+          a(href="en/top.html").opening-Mv_Btn ENGLISH
+            include _includes/_arrow_white
+        .opening-Mv_BtnWrapperSP
+          a(href="top.html").opening-Mv_BtnSP 日本語
+            include _includes/_arrow_white
+          a(href="en/top.html").opening-Mv_BtnSP ENGLISH
+            include _includes/_arrow_white
+  //- /contents
+  <script type="text/javascript">mixpanel.track("index");</script>

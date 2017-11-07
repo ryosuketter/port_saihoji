@@ -1,0 +1,224 @@
+.st-Mv_Wrapper {
+  .st-Mv {
+    position: relative;
+
+    color: #ffffff;
+    // height: 668px;
+    height: 93vh;
+    opacity: 0;
+    transition: opacity 0.4s ease-in 1s;
+
+    .st-Mv_Inner {
+      padding-top: 213px;
+
+      .st-Mv_Title {
+        position: absolute;
+        top: 47%;
+        left: 50%;
+
+        font-size: 38px;
+        letter-spacing: 8px;
+        margin: 0;
+        opacity: 0;
+        transform: translate(-50%, -50%);
+        transition: 2s;
+        writing-mode: vertical-rl;
+      }
+
+      .st-Mv_TitleFade {
+        position: absolute;
+        top: 50%;
+      }
+
+      .reserve-Mv_Title {
+        position: absolute;
+        top: 38%;
+        left: 50%;
+
+        font-size: 36px;
+        letter-spacing: 4px;
+        margin: 0;
+        opacity: 0;
+        text-align: center;
+        transform: translate(-50%, -50%);
+        transition: 2s;
+        writing-mode: vertical-rl;
+      }
+
+      .reserve-Mv_TitleFade {
+        position: absolute;
+        top: 40%;
+      }
+
+      .st-Mv_PageTop {
+        position: absolute;
+        bottom: 65px;
+        left: 50%;
+
+        letter-spacing: 2px;
+        transform: translate(-50%, 0%);
+
+        .st-Mv_PageTopLine {
+          position: absolute;
+          bottom: -63px;
+          left: 50%;
+
+          background-color: #ffffff;
+          display: block;
+          height: 53px;
+          width: 2px;
+        }
+      }
+    }
+  }
+}
+
+.st-Mv_TitleFirst {
+  position: absolute;
+  top: 54.5%;
+  left: 50%;
+
+  color: #000000;
+  font-size: 43px;
+  font-weight: 900;
+  letter-spacing: 2px;
+  margin: 0;
+  transform: translate(-50%, -50%);
+  transition: opacity 2.5s ease-in,color 2.5s ease-in 2.5s;
+  writing-mode: vertical-rl;
+}
+.st-Mv_TitleFirst.reserve {
+  position: absolute;
+  top: 51%;
+}
+
+.st-Mv_PageTopFirst {
+  position: absolute;
+  bottom: 54px;
+  left: 50%;
+
+  letter-spacing: 1.2px;
+  transform: translate3d(0,0,0);
+  // この translate3d の記述があるだけで、使用中のブラウザが、「あっ、3D描画しなきゃじゃん！こりゃ重くなるなぁ。お前の出番だ！GPU！」っていうことになるんですってよ。
+  // transform: translate(-50%, 0%);
+  transition: opacity 2.8s ease-in;
+
+  .st-Mv_PageTopLine {
+    position: absolute;
+    bottom: -63px;
+    left: 50%;
+
+    animation-duration: 2s;
+    animation-name: slideup;
+    animation-timing-function: ease-out;
+    background-color: #000000;
+    display: block;
+    height: 53px;
+    transform: translate3d(0,0,0);
+    // この translate3d の記述があるだけで、使用中のブラウザが、「あっ、3D描画しなきゃじゃん！こりゃ重くなるなぁ。お前の出番だ！GPU！」っていうことになるんですってよ。
+    width: 2px;
+
+    @keyframes slideup {
+      0% {
+        height: 0;
+      }
+      // 50% {
+      //   height: 26px;
+      // }
+      100% {
+        height: 53px;
+      }
+    }
+  }
+}
+
+@include max-screen($BREAK_POINT_TABLET) {
+  .st-Mv_TitleFirst, .st-Mv_PageTopFirst {
+    display: none;
+  }
+}
+
+@include max-screen($BREAK_POINT_TABLET) {
+  .st-Mv_Wrapper {
+    .st-Mv {
+      height: 100vh;
+      transition: opacity 0s ease-in 0s;
+    }
+  }
+}
+
+@include max-screen($BREAK_POINT_SP_iPhone6) {
+  .st-Mv_Wrapper {
+    padding-top: 59px;
+    .st-Mv {
+      position: relative;
+
+      color: #ffffff;
+      height: 395px;
+
+      .st-Mv_Inner {
+        padding-top: 100px;
+
+        .st-Mv_Title {
+          position: absolute;
+          top: 44%;
+          left: 50%;
+
+          font-size: 29px;
+          letter-spacing: 4px;
+          margin: 0;
+          opacity: 0;
+          transform: translate(-50%, -50%);
+          transition: 2s;
+          writing-mode: vertical-rl;
+        }
+
+        .st-Mv_TitleFade {
+          position: absolute;
+          top: 49%;
+        }
+
+        .reserve-Mv_Title {
+          position: absolute;
+          top: 41%;
+          left: 50%;
+
+          font-size: 24px;
+          letter-spacing: 4px;
+          margin: 0;
+          opacity: 0;
+          transform: translate(-50%, -50%);
+          transition: 2s;
+          writing-mode: vertical-rl;
+          height: 70%;
+        }
+
+        .reserve-Mv_TitleFade {
+          position: absolute;
+          top: 46%;
+        }
+
+        .st-Mv_PageTop {
+          position: absolute;
+          bottom: 50px;
+          left: 50%;
+
+          font-size: 10px;
+          letter-spacing: 2px;
+          transform: translate(-50%, 0%);
+
+          .st-Mv_PageTopLine {
+            position: absolute;
+            bottom: -50px;
+            left: 50%;
+
+            background-color: #ffffff;
+            display: block;
+            height: 39px;
+            width: 1px;
+          }
+        }
+      }
+    }
+  }
+}

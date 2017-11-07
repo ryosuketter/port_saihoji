@@ -1,0 +1,73 @@
+extend /_includes/_en/_layout
+append variables
+  //- Required
+  - var pageTitle= "Admission｜saihoji | kokedera";
+  - var pageDescription= "Introduce of admission hours, Fee, and more.";
+  - var pageKeywords= "saihoji,admission";
+  //- Optional
+  - var pageOgpTitle= "Admission｜saihoji | kokedera";
+  //- - var pageOgpImage= site.ogpImage
+  - var pageOgpType= "article";
+  //- Not modified
+  - var pageUrl= "admission.html";
+  - var lang= "en";
+
+block meta
+  +meta('../')
+
+block header
+  +header('../')
+
+block content
+  //- contents
+  .st-Mv_Wrapper#pagetop
+    .st-Mv.admission-Mv
+      .st-Mv_Inner
+        h2.st-Mv_Title #{admission}
+        .st-Mv_PageTop
+          p SCROLL
+          span.st-Mv_PageTopLine
+
+  .admission-Main_Wrapper
+    .admission-Main
+      table.admission-Main_Table
+        tr.admission-Main_Tr
+          th Admission<br>Hours
+          td Generally, we would like for you to follow the one-entrance-per-day rule.
+             <br>We are open at 10:00 a.m. during July to September, and at 01:00 p.m.
+             <br>for other months.
+              ul
+                li
+                  span.admission-Main_Red.astarisk Please arrive about 15 minutes before your reserved time.
+                li
+                  span.admission-Main_Red.astarisk There may be changes with the hours without notice. And it is not possible to specify a visit time.
+                li
+                  span.admission-Main_Red.astarisk Reservations only. Please check
+                  a(href="reservation.html").admission-Main_Red the reservation section
+                  span.admission-Main_Red for details.
+        tr.admission-Main_Tr
+          th Fee
+          td 3,000 JPY per person (Cash only)
+        tr.admission-Main_Tr
+          th Contents
+          td Visit to the garden, after the religious rituals at the Hondō.
+        tr.admission-Main_Tr
+          th Visit duration
+          td Depends on each visitor, but most take 60 ~ 90 minutes.
+        tr.admission-Main_Tr
+          th Seats
+          td There are a few seats available at the Hondō, no pre-reservations.
+             <br>Although it is common to sit in “seiza”, it is not required.
+
+  include /_includes/_en/_toreserve
+  //- /contents
+  <script type="text/javascript">mixpanel.track("admission");</script>
+
+block footer
+  +footer('./')
+
+block sp_header_nav
+  +sp_header_nav('./')
+
+block script
+  +script('../')

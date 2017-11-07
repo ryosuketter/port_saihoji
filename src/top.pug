@@ -1,0 +1,95 @@
+extend _includes/_layout_top
+append variables
+  //- Required
+  - var pageTitle= "西芳寺 | 苔寺";
+  - var pageDescription= "西芳寺のサイトです。拝観案内、予約方法、交通アクセスなどをご紹介しています。";
+  - var pageKeywords= "西芳寺,苔寺,京都,アクセス,予約,申し込み,観光";
+  //- Optional
+  - var pageOgpTitle= "西芳寺 | 苔寺";
+  //- - var pageOgpImage= site.ogpImage
+  - var pageOgpType= "website";
+  //- Not modified
+  - var pageUrl= "index.html";
+  - var lang= "ja";
+
+block content
+  //- contents
+  .top-Wrapper#pagetop
+    .top-Mv
+      .top-Mv_Inner
+        header.top-Header_Wrapper.clearfix
+          h1.top-Header_Logo
+            img(src='assets/img/top/top-header_logo.png', alt='ロゴ')
+          nav.top-Header_Nav
+            ul.top-Header_Ul
+              li.top-Header_Li
+                a(href="reservation.html") #{reserve}
+              li.top-Header_Li
+                a(href="access.html") #{access}
+              li.top-Header_Li
+                a(href="information.html") #{info}
+              li.top-Header_Li
+                a(href="admission.html") #{admission}
+              li.top-Header_Li
+                a(href="about.html") #{about}
+
+        .top-Mv_TitleWrapper
+          h2.top-Mv_Title.wow.fadeInDown(data-wow-delay='1s',data-wow-duration='2s')
+            img(src='assets/img/top/top-logo.png', alt='西芳寺', class="top-Mv_TitleImg")
+
+        .top-Mv_NewsWrapper.font_gothic
+          p 2017.11.01：公式サイトがオープンしました。
+
+    .top-Black_Line
+
+    .top-Message_Wrapper
+      .top-Message
+        .top-Message_Inner
+          .top-Message_TxtAllWrapper
+            .top-Message_TxtWrapper
+              .top-Message_TxtImgWrapper
+                img.wow.fadeInDown(data-wow-delay='0.2s',data-wow-duration='2s')(src='assets/img/top/top-message_txt.png', alt='西芳寺 メッセージ', class="top-Message_TxtImg")
+                img.wow.fadeInDown(data-wow-delay='0.2s',data-wow-duration='2s')(src='assets/img/top/top-message_txt_sp.png', alt='西芳寺 メッセージ', class="top-Message_TxtImgSp")
+
+    .top-Black_Line
+
+    .top-About_Wrapper
+      .top-About
+        .top-About_Inner
+          .top-About_LeftWrapper
+            .top-About_Left
+              h2.top-About_LeftTitle.wow.fadeInDown(data-wow-delay='0.2s',data-wow-duration='2s') #{about}
+              p.top-About_LeftTxt.wow.fadeInDown(data-wow-delay='0.4s',data-wow-duration='2s') 境内一面を覆う苔の美しさから、「苔寺」として親しまれています。35,000平方メートルにおよぶ庭園は、国の特別名勝及び史跡にも現在指定されています。
+              .top-About_BtnWrapper.wow.fadeInDown(data-wow-delay='0.6s',data-wow-duration='2s')
+                a(href="about.html").top-About_Btn 詳しく知る
+                  //- include _includes/_arrow_white
+                  img(src='assets/img/arrow.png', alt='矢印', class="arrow-Img")
+          .top-About_RightWrapper.wow.fadeInDown(data-wow-delay='0.8s',data-wow-duration='2s')
+            .top-About_Right
+              img(src='assets/img/top/top-about_right.png', alt='西芳寺', class="top-Mv_TitleImg")
+          .top-About_BottomBtnWrapper.wow.fadeInDown(data-wow-delay='0.6s',data-wow-duration='2s')
+            a(href="about.html").top-About_BottomBtn 詳しく知る
+              //- include _includes/_arrow_white
+              img(src='assets/img/arrow.png', alt='矢印', class="arrow-Img")
+
+    .top-Link_Wrapper
+      .top-Link
+        .top-Link_Inner
+          a(href="admission.html").top-Link
+            .top-Link_LeftWrapper
+              .top-Link_Left
+                p.top-Link_Txt #{admission}
+          a(href="information.html").top-Link
+            .top-Link_RightWrapper
+              .top-Link_Right
+                p.top-Link_Txt #{info}
+
+    .top-LinkEntry_Wrapper
+      .top-LinkEntry
+        .top-LinkEntry_Inner
+          .top-LinkEntry_BtnWrapper.wow.fadeInDown(data-wow-delay='0.2s',data-wow-duration='2s')
+            a(href="reservation.html").top-LinkEntry_Btn 事前申込はこちらから
+              //- include _includes/_arrow_white
+              img(src='assets/img/arrow.png', alt='矢印', class="arrow-Img")
+  //- /contents
+  <script type="text/javascript">mixpanel.track("top");</script>

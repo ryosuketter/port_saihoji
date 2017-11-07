@@ -1,0 +1,47 @@
+// ==========================================================================
+// settings
+// ==========================================================================
+@import "./settings/_variables.scss";
+@import "./settings/_zindex.scss";
+
+// ==========================================================================
+// tools
+// ==========================================================================
+@import "./tools/mixins/_margin.scss";
+@import "./tools/mixins/_mediaqueries.scss";
+
+// ==========================================================================
+// base（基本normalize.css）
+// ==========================================================================
+@import "./base/_normalize.scss";
+
+// ==========================================================================
+// contents（よく使うコンポーネントと各カテゴリーごとにファイルをつくる）
+// ==========================================================================
+@import "./contents/_opening.scss";
+@import "./contents/_top.scss";
+@import "./contents/_about.scss";
+@import "./contents/_access.scss";
+@import "./contents/_admission.scss";
+@import "./contents/_info.scss";
+@import "./contents/_reserve.scss";
+
+// @import "./contents/message/_concept.scss";
+
+// ==========================================================================
+// structures（共通部分の定義）
+// ==========================================================================
+@import "./structures/_footer.scss";
+@import "./structures/_header.scss";
+@import "./structures/_mv.scss";
+@import "./structures/_pagetop.scss";
+@import "./structures/_sp_header_nav.scss";
+@import "./structures/_toreserve.scss";
+
+// ==========================================================================
+// vendor（DLして使うファイルとか）
+// ==========================================================================
+@import "./vendor/animate.scss";
+@import "./vendor/_page_transition.scss";
+@import "./vendor/_slick.scss";
+@import "./vendor/_slick-theme.scss";

@@ -1,0 +1,99 @@
+// 役割をわかりやすくするために、ヘッダー・フッターのコンポーネントにはst-をプレフィックスにつける（p142）
+
+// st-header
+
+.st-Header_Wrapper {
+  align-items: center;// 垂直方法に対して中央に配置
+  background-color: $Bg_Black;
+  display: flex; //横並び
+  height: 78px;
+  justify-content: space-between;// 画面端に寄せる
+  opacity: 0;
+  padding: 0 37px;
+  transition: opacity 0.4s ease-in 1s;
+
+  .st-Header_Logo {
+    padding-top: 6px;
+  }
+
+  .st-Header_Nav {
+    .st-Header_Ul {
+      align-items: center;// 垂直方法に対して中央に配置
+      display: flex; //横並び
+      justify-content: space-between;// 画面端に寄せる
+      list-style: none;
+
+      .st-Header_Li {
+        font-size: 16px;
+        padding-left: 28px;
+
+        &:first-child {
+          padding-left: 0;
+        }
+
+        a {
+          color: #ffffff;
+          letter-spacing: 2px;
+          text-decoration: none;
+          position: relative;
+
+          &:after {
+            position: absolute;
+            bottom: -9px;
+            left: 50%;
+
+            background-color: #ffffff;
+            content: "";
+            height: 2px;
+            -webkit-transform: translateX(-50%);
+                    transform: translateX(-50%);
+            transition: 0.3s;
+            width: 0;
+          }
+          &:hover::after {
+            width: 100%;
+          }
+        }
+      }
+    }
+  }
+}
+
+.class_name {
+  display: -webkit-flex;
+  display:     -ms-flex;
+  display:         flex;
+}
+
+@include max-screen($BREAK_POINT_TABLET) {
+  .top-Mv .top-Header_Wrapper, .top-MvEn  .top-Header_Wrapper {
+    display: none;
+  }
+}
+
+@include max-screen($BREAK_POINT_TABLET) {
+  .st-Header_Wrapper {
+    position: fixed;
+
+    align-items: center;// 垂直方法に対して中央に配置
+    background-color: $Bg_Black;
+    display: flex; //横並び
+    height: 70px;
+    justify-content: space-between;// 画面端に寄せる
+    padding: 0 24px;
+    transition: opacity 0s ease-in 0s;
+    width: 100%;
+    z-index: $Z_SP_HEADER;
+
+    .st-Header_Logo {
+      padding-top: 13px;
+      img {
+        width: 60px;
+      }
+    }
+
+    .st-Header_Nav {
+      display: none;
+    }
+  }
+}

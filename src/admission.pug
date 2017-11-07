@@ -1,0 +1,54 @@
+extend _includes/_layout
+append variables
+  //- Required
+  - var pageTitle= "拝観案内｜西芳寺 | 苔寺";
+  - var pageDescription= "日・時間・料金など拝観するのに必要な情報をご案内します";
+  - var pageKeywords= "西芳寺,拝観案内,苔寺,京都";
+  //- Optional
+  - var pageOgpTitle= "拝観案内｜西芳寺 | 苔寺";
+  //- - var pageOgpImage= site.ogpImage
+  - var pageOgpType= "article";
+  //- Not modified
+  - var pageUrl= "admission.html";
+  - var lang= "ja";
+
+block content
+  //- contents
+  .st-Mv_Wrapper#pagetop
+    .st-Mv.admission-Mv
+      .st-Mv_Inner
+        h2.st-Mv_Title #{admission}
+        .st-Mv_PageTop
+          p SCROLL
+          span.st-Mv_PageTopLine
+
+  .admission-Main_Wrapper
+    .admission-Main
+      table.admission-Main_Table
+        tr.admission-Main_Tr
+          th 拝観日時
+          td 原則1日1回の開門です。<br>例年、7月から9月は10時、それ以外の月は13時からです。
+             ul
+               li
+                 span.admission-Main_Red.astarisk 上記は予告なく変更されることがあります。また、時間の指定はできません。
+               li
+                 span.admission-Main_Red.astarisk 完全申し込み制です。詳しくは
+                 a(href="reservation.html").admission-Main_Red 事前申込方法
+                 span.admission-Main_Red をご確認下さい。
+        tr.admission-Main_Tr
+          th 参拝冥加料
+          td お一人様
+            span.space 3,000円以上
+        tr.admission-Main_Tr
+          th 拝観内容
+          td 本堂での参拝の後、庭園を拝観していただきます。
+        tr.admission-Main_Tr
+          th 総所要時間
+          td 個人差はございますが、約60～90分です。
+        tr.admission-Main_Tr
+          th 本堂内の<br>椅子席に<br class="add-line">ついて
+          td 若干数のみ椅子席のご用意もございますが、事前の予約は受け付けておりません。尚、本堂内では正座ではなく、足を楽にされて座っていただいても構いません。
+
+  include /_includes/_toreserve
+  //- /contents
+  <script type="text/javascript">mixpanel.track("admission");</script>

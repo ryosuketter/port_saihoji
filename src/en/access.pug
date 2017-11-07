@@ -1,0 +1,70 @@
+extend /_includes/_en/_layout
+append variables
+  //- Required
+  - var pageTitle= "Access｜saihoji | kokedera";
+  - var pageDescription= "Introduce of directions by bus,taxi,train. and parking lots.";
+  - var pageKeywords= "saihoji,access";
+  //- Optional
+  - var pageOgpTitle= "Access｜saihoji | kokedera";
+  //- - var pageOgpImage= site.ogpImage
+  - var pageOgpType= "article";
+  //- Not modified
+  - var pageUrl= "access.html";
+  - var lang= "en";
+
+block meta
+  +meta('../')
+
+block header
+  +header('../')
+
+block content
+  //- contents
+  .st-Mv_Wrapper#pagetop
+    .st-Mv.access-Mv
+      .st-Mv_Inner
+        h2.st-Mv_Title #{access}
+        .st-Mv_PageTop
+          p SCROLL
+          span.st-Mv_PageTopLine
+
+  .access-Main_Wrapper
+    .access-Main
+      table.access-Main_Table
+        tr.access-Main_Tr
+          th Location
+          td
+           = "56, Matsuo Jingatanichō, Nishikyō-ku, Kyoto, 615-8286, Japan"
+           br
+           a(href="https://goo.gl/maps/mY37NWNLnYJ2" target="_blank") ▶ Google Map
+
+        tr.access-Main_Tr
+          th Access
+          td
+            p From Kyoto Station（京都駅）
+            ul
+              li ・Kyoto Bus (Line 73) approx. 60 min, 3 min walk from<br class="hidden_pc">“Kokedera, Suzumushi-dera ” (苔寺・すず虫寺バス停) station
+              li ・Taxi approx. 30 min (approx. 2,200〜2,500 JPY)
+            p From Arashi-yama（嵐山方面）
+            ul
+              li ・Kyoto bus (Line 73 or 63) 15 min, 3 min walk from “Kokedera,<br class="hidden_pc">Suzumushi-dera” (苔寺・すず虫寺バス停) station
+              li ・Taxi approx. 10 min (approx. 1,000 JPY)
+            p From Osaka（大阪方面）
+            ul
+              li ・35 min via Hankyu Railway Kyoto line, 12 min by taxi (approx. 1,000 JPY)<br class="hidden_pc">from “Katsura” (桂駅) station
+        tr.access-Main_Tr
+          th Parking
+          td We do not have a parking lot.<br class="hidden_sp">There is a coin parking close by, however it can get very crowded depending on the time and so we recommend coming by public transportation or taxi.
+
+  include /_includes/_en/_toreserve
+  //- /contents
+  <script type="text/javascript">mixpanel.track("access");</script>
+
+block footer
+  +footer('./')
+
+block sp_header_nav
+  +sp_header_nav('./')
+
+block script
+  +script('../')

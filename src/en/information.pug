@@ -1,0 +1,128 @@
+extend /_includes/_en/_layout
+append variables
+  //- Required
+  - var pageTitle= "Information｜saihoji | kokedera";
+  - var pageDescription= "Introduce of floor map.";
+  - var pageKeywords= "saihoji,Information";
+  //- Optional
+  - var pageOgpTitle= "Information｜saihoji | kokedera";
+  //- - var pageOgpImage= site.ogpImage
+  - var pageOgpType= "article";
+  //- Not modified
+  - var pageUrl= "information.html";
+  - var lang= "en";
+
+block meta
+  +meta('../')
+
+block header
+  +header('../')
+
+block content
+  //- contents
+  .st-Mv_Wrapper#pagetop
+    .st-Mv.info-Mv
+      .st-Mv_Inner
+        h2.st-Mv_Title #{info}
+        .st-Mv_PageTop
+          p SCROLL
+          span.st-Mv_PageTopLine
+
+  .info-Link_Wrapper
+    .info-Link_Inner
+      ul
+        li
+          a(href="#hond") #{info_hond}
+        li
+          a(href="#ogon") #{info_ogon}
+        li
+          a(href="#syou") #{info_syon}
+        li
+          a(href="#sito") #{info_sito}
+        li
+          a(href="#kare") #{info_kare}
+        //- li
+        //-   a(href="#zaze") #{info_zaze}
+
+  .info-Title_Wrapper
+    .info-Title_Inner
+      h3 Introduction
+      p The garden has two floors; The upper floor is “Karesansui style garden”,
+        <br class="hidden_pc">the lower floor is “Classical style garden” with path around a pond called Ougonchi.
+        <br class="hidden_pc">The garden has been selected as one of Historic Sites and Places of Scenic Beauty by Government of Japan.
+      p Please come and enjoy the garden showing different faces per season.
+        <br class="hidden_pc">Due to lack of space we can not introduce all areas, but please also visit the areas that were not introduced on this page.
+
+  .info-Contents_Wrapper#hond
+    .info-Contents_Inner
+      .info-Contents_BodyWrapper
+        h3.info-Contents_Title #{info_hond}
+        .info-Contents_TxtWrapper
+          p.info-Contents_Txt Also known as Sairaidou, was reconstructed in 1969, by a famous professor from Kyōto University, Jirō Murata. The inner fusuma doors have 104 abstract paintings by Inshō Dōmoto. Amitabha Tathaga is the main god of this building. Before visiting the garden, visitors will participate in religious rituals at the Hondō.
+      .info-Contents_ImgWrapper
+        img(src='../assets/img/info/info-hond_1.png', alt='saihoji Hondō', class="info-hond_1")
+        img(src='../assets/img/info/info-hondsp_1.png', alt='saihoji Hondō', class="info-hondsp_1")
+
+  .info-Contents_Wrapper#ogon
+    .info-Contents_Inner
+      .info-Contents_BodyWrapper
+        h3.info-Contents_Title #{info_ogon}
+        .info-Contents_TxtWrapper
+          p.info-Contents_Txt This is the main pond of this temple, and the center piece of the lower floor. Ougonchi shapes like Chinese character “心(SHIN)” which means heart, and is also known as Shinji Ike.
+      .info-Contents_ImgWrapper
+        img(src='../assets/img/info/info-ogon_1.png', alt='saihoji Ougon Chi', class="info-ogon_1")
+        img(src='../assets/img/info/info-ogonsp_1.png', alt='saihoji Ougon Chi', class="info-ogonsp_1")
+        img(src='../assets/img/info/info-ogon_2.png', alt='saihoji Ougon Chi', class="info-ogon_2")
+
+  .info-Contents_Wrapper#syou
+    .info-Contents_Inner
+      .info-Contents_BodyWrapper
+        h3.info-Contents_Title #{info_syon}
+        .info-Contents_TxtWrapper
+          p.info-Contents_Txt This tea house is registered as a National Treasure, rebuilt by Sōan, the second son of Sen-no-Rikyu, during the Toyotomi Period. It is known for the Tsukimi-dai (moon watching area) in the north side. It is also said that Sen-no-Rikyu had used this building as a temporary hideout, when Toyotomi Hideyoshi ordered a hara-kiri. Iwakura Tomomi also used this teahouse, and succeeded in hiding from the shogunates during the Meiji Restoration.
+      .info-Contents_ImgWrapper
+        img(src='../assets/img/info/info-syou_1.png', alt='saihoji Shōnantei', class="info-syou_1")
+        img(src='../assets/img/info/info-syousp_1.png', alt='saihoji Shōnantei', class="info-syousp_1")
+
+  .info-Contents_Wrapper#sito
+    .info-Contents_Inner.clearfix
+      .info-Contents_BodyWrapper
+        h3.info-Contents_Title #{info_sito}
+        .info-Contents_TxtWrapper
+          p.info-Contents_Txt A hall dedicated to the founding priest. Inside, there are statues of Saint Gyōki, Prince Shinnyohō, Musō Kokushi, Fujiwara Chikahide and his wife.
+      .info-Contents_ImgWrapper
+        img(src='../assets/img/info/info-sito_1.png', alt='saihoji Shitōan', class="info-sito_1")
+        img(src='../assets/img/info/info-sitosp_1.png', alt='saihoji Shitōan', class="info-sitosp_1")
+
+  .info-Contents_Wrapper#kare
+    .info-Contents_Inner
+      .info-Contents_BodyWrapper
+        h3.info-Contents_Title #{info_kare}
+        .info-Contents_TxtWrapper
+          p.info-Contents_Txt The oldest Karesansui (a type of garden using only stones and rocks to express landscapes) in Japan, made by Musō Kokushi in 1339, which was originally made to be his own grave. The main idea of gardens made in those days was to have ponds, however Musō Kokushi decided to portray the spirituality of Zen through stones. This was a very innovative idea, and was said to be futuristic. This garden, became the inspiration to many other rock gardens, and is said to be Japan’s founder of rock-gardens. The garden itself has been regarded as a dojo for Zen spirit training, and Musō Kokushi’s enlightenment is here entrusted.
+      .info-Contents_ImgWrapper
+        img(src='../assets/img/info/info-kare_1.png', alt='saihoji Karesansui', class="info-kare_1")
+        img(src='../assets/img/info/info-karesp_1.png', alt='saihoji Karesansui', class="info-karesp_1")
+
+  //- .info-Contents_Wrapper#zaze
+  //-   .info-Contents_Inner
+  //-     .info-Contents_BodyWrapper
+  //-       h3.info-Contents_Title #{info_zaze}
+  //-         span ざぜんせき
+  //-       .info-Contents_TxtWrapper
+  //-         p.info-Contents_Txt 夢窓國師が三週間の断食修行をされたと言われる大きな石です。また、枯山水庭園の作庭普請の時、夢窓國師自身がこの石上より指揮されました。
+  //-     .info-Contents_ImgWrapper
+  //-       img(src='../assets/img/info/info-zaze_1.png', alt='saihoji 坐禅石', class="info-zaze_1")
+
+  include /_includes/_en/_toreserve
+  //- /contents
+  <script type="text/javascript">mixpanel.track("info");</script>
+
+block footer
+  +footer('./')
+
+block sp_header_nav
+  +sp_header_nav('./')
+
+block script
+  +script('../')

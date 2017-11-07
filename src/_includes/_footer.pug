@@ -1,0 +1,23 @@
+//- footer
+mixin footer(path)
+  footer.st-Footer_Wrapper
+    .st-Footer_Inner
+      .st-Footer_LeftWrapper
+        .st-Footer_NameWrapper
+          p.st-Footer_EnTxt #{saihouji_en}
+          p.st-Footer_Txt #{saihouji}
+        .st-Footer_AdressWrapper
+          p.st-Footer_TxtAddress 〒615-8286 <br class="add-line">京都府京都市西京区松尾神ケ谷町56
+      .st-Footer_RightWrapper
+        p このページをシェアする
+        a(href='https://twitter.com/share?url=http://saihoji-kokedera.com&text=拝観案内や予約方法や交通アクセスなどをご紹介しています', data-dnt='true', target="_blank")
+          i.fa.fa-twitter(aria-hidden='true')
+        a(href='https://www.facebook.com/sharer/sharer.php?u=http://saihoji-kokedera.com' target="_blank")
+          i.fa.fa-facebook(aria-hidden='true')
+        a(href='https://plus.google.com/share?url=http://saihoji-kokedera.com' target="_blank")
+          i.fa.fa-google-plus(aria-hidden='true')
+
+  .st-Footer_BgBlack
+    p.st-Footer_BgBlack_Txt ©SAIHOJI. All Rights Reserved.
+
+//- /footer

@@ -1,0 +1,116 @@
+extend _includes/_layout
+append variables
+  //- Required
+  - var pageTitle= "境内案内｜西芳寺 | 苔寺";
+  - var pageDescription= "西芳寺の境内の見どころをご紹介します";
+  - var pageKeywords= "西芳寺,境内案内,苔寺,京都";
+  //- Optional
+  - var pageOgpTitle= "境内案内｜西芳寺 | 苔寺";
+  //- - var pageOgpImage= site.ogpImage
+  - var pageOgpType= "article";
+  //- Not modified
+  - var pageUrl= "information.html";
+  - var lang= "ja";
+
+block content
+  //- contents
+  .st-Mv_Wrapper#pagetop
+    .st-Mv.info-Mv
+      .st-Mv_Inner
+        h2.st-Mv_Title #{info}
+        .st-Mv_PageTop
+          p SCROLL
+          span.st-Mv_PageTopLine
+
+  .info-Link_Wrapper
+    .info-Link_Inner
+      ul
+        li
+          a(href="#hond") #{info_hond}
+        li
+          a(href="#ogon") #{info_ogon}
+        li
+          a(href="#syou") #{info_syon}
+        li
+          a(href="#sito") #{info_sito}
+        li
+          a(href="#kare") #{info_kare}
+        //- li
+        //-   a(href="#zaze") #{info_zaze}
+
+  .info-Title_Wrapper
+    .info-Title_Inner
+      h3 はじめに
+      p 西芳寺庭園は、<br class="hidden_Pc">上下二段に分かれており、<br class="hidden_Sp">上段は枯山水式庭園、下段は黄金池を中心にした池泉廻遊式庭園になっています。<br class="hidden_Sp">庭園は史跡・特別名勝に指定されています。
+      p 参拝当日は、<br class="hidden_Pc">当ページでご紹介しきれなかった場所も含め、<br class="hidden_Sp">四季折々の庭園をお楽しみください。
+
+  .info-Contents_Wrapper#hond
+    .info-Contents_Inner
+      .info-Contents_BodyWrapper
+        h3.info-Contents_Title #{info_hond}
+          span ほんどう
+        .info-Contents_TxtWrapper
+          p.info-Contents_Txt 昭和44年(1969年)、京都大学名誉教授村田治郎先生の設計・監督により、再建されたもので、西来堂(さいらいどう)と言います。内部襖絵は、堂本印象画伯により百四面が抽象画で描かれています。本尊は阿弥陀如来をお祀りしています。尚、参拝者の皆様には庭園の拝観に先立ち、本堂での参拝にも参加いただいております。
+      .info-Contents_ImgWrapper
+        img(src='assets/img/info/info-hond_1.png', alt='西芳寺 本堂', class="info-hond_1")
+        img(src='assets/img/info/info-hondsp_1.png', alt='西芳寺 本堂', class="info-hondsp_1")
+
+  .info-Contents_Wrapper#ogon
+    .info-Contents_Inner
+      .info-Contents_BodyWrapper
+        h3.info-Contents_Title #{info_ogon}
+          span おうごんち
+        .info-Contents_TxtWrapper
+          p.info-Contents_Txt 西芳寺庭園の本池であり、下段の庭の中心景となります。黄金池は心の字を象っており、心字池とも呼ばれています。
+      .info-Contents_ImgWrapper
+        img(src='assets/img/info/info-ogon_1.png', alt='西芳寺 黄金池', class="info-ogon_1")
+        img(src='assets/img/info/info-ogonsp_1.png', alt='西芳寺 黄金池', class="info-ogonsp_1")
+        img(src='assets/img/info/info-ogon_2.png', alt='西芳寺 黄金池', class="info-ogon_2")
+
+  .info-Contents_Wrapper#syou
+    .info-Contents_Inner
+      .info-Contents_BodyWrapper
+        h3.info-Contents_Title #{info_syon}
+          span しょうなんてい
+        .info-Contents_TxtWrapper
+          p.info-Contents_Txt 豊臣時代に千利休の次男、千少庵により建立されたお茶室で、国の重要文化財に指定されています。北に張り出した月見台が特徴で、月見台北の黄金池には「朝日の清水」という泉が湧いています。千利休が豊臣秀吉より切腹を命じられた時、一時隠れ家として利用したと言われてます。また、明治維新の際には岩倉具視がここに隠れ、幕府の難を逃れました。
+      .info-Contents_ImgWrapper
+        img(src='assets/img/info/info-syou_1.png', alt='西芳寺 湘南亭', class="info-syou_1")
+        img(src='assets/img/info/info-syousp_1.png', alt='西芳寺 湘南亭', class="info-syousp_1")
+
+  .info-Contents_Wrapper#sito
+    .info-Contents_Inner.clearfix
+      .info-Contents_BodyWrapper
+        h3.info-Contents_Title #{info_sito}
+          span しとうあん
+        .info-Contents_TxtWrapper
+          p.info-Contents_Txt 開山堂です。中には西芳寺の祖師方である行基菩薩、眞如法親王、夢窓國師の御位牌と藤原親秀夫妻、夢窓國師の木像をお祀りしています。
+      .info-Contents_ImgWrapper
+        img(src='assets/img/info/info-sito_1.png', alt='西芳寺 指東庵', class="info-sito_1")
+        img(src='assets/img/info/info-sitosp_1.png', alt='西芳寺 指東庵', class="info-sitosp_1")
+
+  .info-Contents_Wrapper#kare
+    .info-Contents_Inner
+      .info-Contents_BodyWrapper
+        h3.info-Contents_Title #{info_kare}
+          span かれさんすい
+        .info-Contents_TxtWrapper
+          p.info-Contents_Txt 夢窓國師により、暦応2年（1339年）に築かれた日本最古の枯山水の石組で、夢窓國師の生前の墓(寿塔)の造形化したものと言われます。それまで、庭園の主流は、池をメインにした池泉庭園でしたが、夢窓國師は石組を庭の主役としたばかりでなく、禅の精神性をもその中に反映させました。これは、当時としては非常に革新的で有り、まさに“新時代的”な石組みであるとも言えます。
+          p.info-Contents_Txt この夢窓國師作庭の西芳寺枯山水はあらゆる枯山水庭園の原点ともなり、我が国における枯山水庭園の最高峰とも評されています。庭園そのものが禅の精神修練の道場とされました夢窓國師の悟りの境涯がここに託されました。
+      .info-Contents_ImgWrapper
+        img(src='assets/img/info/info-kare_1.png', alt='西芳寺 枯山水', class="info-kare_1")
+        img(src='assets/img/info/info-karesp_1.png', alt='西芳寺 枯山水', class="info-karesp_1")
+
+  //- .info-Contents_Wrapper#zaze
+  //-   .info-Contents_Inner
+  //-     .info-Contents_BodyWrapper
+  //-       h3.info-Contents_Title #{info_zaze}
+  //-         span ざぜんせき
+  //-       .info-Contents_TxtWrapper
+  //-         p.info-Contents_Txt 夢窓國師が三週間の断食修行をされたと言われる大きな石です。また、枯山水庭園の作庭普請の時、夢窓國師自身がこの石上より指揮されました。
+  //-     .info-Contents_ImgWrapper
+  //-       img(src='assets/img/info/info-zaze_1.png', alt='西芳寺 坐禅石', class="info-zaze_1")
+
+  include /_includes/_toreserve
+  //- /contents
+  <script type="text/javascript">mixpanel.track("info");</script>

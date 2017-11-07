@@ -1,0 +1,291 @@
+// 役割をわかりやすくするために、ヘッダー・フッターのコンポーネントにはst-をプレフィックスにつける（p142）
+
+// st-footer
+
+.st-Footer_Wrapper {
+  background-color: $Bg_Green;
+  color: #ffffff;
+  text-align: left;
+
+  .st-Footer_Inner {
+    /* シェアボタン解禁ならこれを解く */
+    display: -webkit-flex;
+    display:     -ms-flex;
+    display:         flex;
+    -webkit-justify-content: space-between; /* Safari */
+            justify-content: space-between;
+    margin: 0 auto;
+    max-width: 1000px;
+    padding: 35px 0 32px;
+    /* シェアボタン解禁ならこれを解く */
+    // text-align: center; /* シェアボタン解禁ならこれを消す */
+  }
+
+  .st-Footer_EnTxt {
+    font-size: 10px;
+    font-weight: 100;
+    letter-spacing: 2px;
+    margin-bottom: 2px;
+  }
+
+  .st-Footer_Txt {
+    font-size: 28px;
+    letter-spacing: 2px;
+    margin-bottom: 5px;
+  }
+
+  .st-Footer_TxtAddress {
+    font-size: 13px;
+    letter-spacing: 2px;
+
+    .add-line {
+      display: none;
+    }
+  }
+
+  .st-Footer_RightWrapper {
+    -webkit-align-content: stretch; /* Safari */
+            align-content: stretch;
+    display: -webkit-flex;
+    display:     -ms-flex;
+    display:         flex;
+    -webkit-justify-content: space-between; /* Safari */
+            justify-content: space-between;
+    padding-top: 26px;
+    vertical-align: middle;
+
+    p {
+      padding-right: 25px;
+      padding-top: 3px;
+    }
+
+    .fa {
+      color: #ffffff;
+      font-size: 28px;
+      transition: 0.3s;
+    }
+    .fa-twitter {
+      margin-right: 15px;
+      &:hover {
+        color: #00aced;
+      }
+    }
+    .fa-facebook {
+      margin-right: 15px;
+      &:hover {
+        color: #3b5998;
+      }
+    }
+    .fa-google-plus {
+      &:hover {
+        color: #d34836;
+      }
+    }
+  }
+}
+
+.st-Footer_BgBlack {
+  background-color: #030000;
+  color: #989797;
+  font-size: 12px;
+  height: 41px;
+  letter-spacing: 0.6px;
+  padding-top: 12px;
+  text-align: center;
+}
+
+@include max-screen($BREAK_POINT_TABLET) {
+  .st-Footer_Wrapper {
+    background-color: $Bg_Green;
+    color: #ffffff;
+    padding-bottom: 19px;
+    padding-top: 23px;
+    text-align: left;
+
+    .st-Footer_Inner {
+      display: block;
+      width: 100%;
+    }
+
+    .st-Footer_LeftWrapper {
+      position: relative;
+
+      -webkit-align-items: center;
+              align-items: center;
+      display: block;
+      display:     -ms-flex;
+      display: -webkit-flex;
+      display:         flex;
+      justify-content: center;
+      // text-align: left; /* シェアボタン解禁ならこれを消す */
+      width: 100%;
+
+      &:before {
+        position: absolute;
+        bottom: -10px;
+        left: 51%;
+
+        border-bottom: 2px solid #ffffff; /* シェアボタン解禁ならこれを解く */
+        content: "";
+        display: block;
+        transform: translateX(-50%);
+        width: 330px;
+      }
+    }
+
+    .st-Footer_RightWrapper {
+      display: block;
+      text-align: center;
+      width: 100%;
+      p {
+        display: block;
+        padding-bottom: 10px;
+        padding-right: 0;
+        width: 100%;
+      }
+
+      a {
+        &:first-child {
+          padding-right: 10px;
+        }
+      }
+    }
+
+
+    .st-Footer_EnTxt {
+      font-size: 8px;
+      font-weight: 100;
+      letter-spacing: 2px;
+      margin-bottom: -2px;
+      padding-left: 5px;
+      padding-top: 10px;
+    }
+
+    .st-Footer_Txt {
+      font-size: 24px;
+      letter-spacing: 2px;
+      margin-bottom: 5px;
+    }
+
+    .st-Footer_TxtAddress {
+      font-size: 13px;
+      letter-spacing: 2px;
+      line-height: 2;
+      margin-left: 10%;
+      width: 101%;
+
+      .add-line {
+        display: block;
+      }
+    }
+  }
+}
+
+@include max-screen($BREAK_POINT_SP_iPhone6) {
+  .st-Footer_Wrapper {
+    background-color: $Bg_Green;
+    color: #ffffff;
+    margin-bottom: -1px;
+    padding-bottom: 19px;
+    padding-top: 23px;
+    text-align: left;
+
+    .st-Footer_Inner {
+      display: block;
+      padding: 7px 0 5px;
+      width: 100%;
+    }
+
+    .st-Footer_LeftWrapper {
+      position: relative;
+
+      -webkit-align-items: center;
+              align-items: center;
+      display: block;
+      display:     -ms-flex;
+      display: -webkit-flex;
+      display:         flex;
+      justify-content: center;
+      width: 100%;
+
+      .st-Footer_NameWrapper {
+        position: relative;
+        left: -3px;
+      }
+
+      &:before {
+        position: absolute;
+        bottom: -10px;
+        left: 51%;
+
+        border-bottom: 1px solid #ffffff; /* シェアボタン解禁ならこれを解く */
+        content: "";
+        display: block;
+        transform: translateX(-50%);
+        width: 300px;
+      }
+    }
+
+    .st-Footer_RightWrapper {
+      display: block;
+      text-align: center;
+      width: 100%;
+      p {
+        display: block;
+        padding-bottom: 10px;
+        padding-right: 0;
+        width: 100%;
+      }
+
+      a {
+        &:first-child {
+          padding-right: 10px;
+        }
+      }
+
+      .fa-twitter {
+        margin-right: 15px;
+      }
+      .fa-facebook {
+        margin-right: 15px;
+      }
+    }
+
+    .st-Footer_EnTxt {
+      font-size: 8px;
+      font-weight: 100;
+      letter-spacing: 2px;
+      margin-bottom: -2px;
+      padding-left: 0;
+      padding-top: 10px;
+    }
+
+    .st-Footer_Txt {
+      font-size: 24px;
+      letter-spacing: 2px;
+      margin-bottom: 2px;
+    }
+
+    .st-Footer_TxtAddress {
+      font-size: 12px;
+      letter-spacing: 1px;
+      line-height: 2;
+      margin-left: 5%;
+      padding-top: 6px;
+      width: 100%;
+
+      .add-line {
+        display: block;
+      }
+    }
+  }
+  .st-Footer_BgBlack {
+    background-color: #030000;
+    color: #989797;
+    font-size: 12px;
+    height: 24px;
+    letter-spacing: 0.6px;
+    padding-top: 2px;
+    text-align: center;
+  }
+}

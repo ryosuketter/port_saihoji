@@ -1,0 +1,206 @@
+.about-Mv {
+  background: url("../img/about/about-mv_bgimg.png")no-repeat center top 0;
+  //fixedはスクロール時にレイヤーを感じさせるやつ
+  //left bottom 背景画像を左下スタートで固定 http://kumacrow.blog111.fc2.com/blog-entry-296.html
+  background-size: cover;
+  //領域全体を覆う
+}
+
+@include max-screen($BREAK_POINT_SP_iPhone6) {
+  .about-Mv {
+    background: url("../img/about/about-mv_bgimgsp.png")no-repeat center top 0;
+    background-size: cover;
+  }
+}
+
+.about-Main_Wrapper {
+  .about-Main {
+    .about-Main_Head {
+      background-color: $Bg_Off_White;
+      letter-spacing: 2px;
+      padding: 48px 0 29px;
+      text-align: center;
+
+      h3 {
+        color: $Yellow;
+        font-size: 13px;
+        letter-spacing: 1px;
+        margin-bottom: 16px;
+      }
+
+      p {
+        font-size: 17px;
+        letter-spacing: 0.7px;
+        line-height: 1.8;
+
+        .hidden_sp {
+          display: block;
+        }
+      }
+    }
+
+    .about-Main_TxtWrapper {
+      letter-spacing: 2px;
+      margin: 0 auto;
+      max-width: 755px;
+      padding-bottom: 61px;
+      padding-top: 42px;
+
+      h3 {
+        color: $Yellow;
+        font-size: 14px;
+        letter-spacing: 1px;
+        margin-bottom: 18px;
+        text-align: center;
+      }
+
+      .about-Main_Txt {
+        font-size: 14px;
+        letter-spacing: 1px;
+        line-height: 2;
+        margin-bottom: 21px;
+      }
+    }
+  }
+}
+
+@include max-screen($BREAK_POINT_TABLET) {
+  .about-Main_Wrapper {
+    .about-Main {
+      .about-Main_Head {
+        background-color: $Bg_Off_White;
+        letter-spacing: 2px;
+        padding: 44px 20px;
+        text-align: center;
+
+        h3 {
+          color: $Yellow;
+          font-size: 12px;
+        }
+
+        p {
+          font-size: 14px;
+        }
+      }
+
+      .about-Main_TxtWrapper {
+        letter-spacing: 2px;
+        margin: 0 auto;
+        max-width: 667px;
+        padding: 0 15px;
+        padding-bottom: 38px;
+        padding-top: 29px;
+
+        .about-Main_Txt {
+          font-size: 13px;
+          line-height: 1.9;
+          margin-bottom: 21px;
+        }
+      }
+    }
+  }
+}
+
+@include max-screen($BREAK_POINT_SP_iPhone6) {
+  .about-Main_Wrapper {
+    .about-Main {
+      .about-Main_Head {
+        background-color: $Bg_Off_White;
+        letter-spacing: 1px;
+        padding: 24px 20px 19px;
+        text-align: center;
+
+        h3 {
+          color: $Yellow;
+          font-size: 13px;
+          margin-bottom: 12px;
+        }
+
+        p {
+          font-size: 16px;
+          font-weight: 600;
+          letter-spacing: 1px;
+          line-height: 1.5;
+
+          .hidden_sp {
+            display: none;
+          }
+        }
+      }
+
+      .about-Main_TxtWrapper {
+        letter-spacing: 1px;
+        margin: 0 auto;
+        max-width: 667px;
+        padding: 22px 15px 15px;
+
+        h3 {
+          margin-bottom: 8px;
+        }
+
+        .about-Main_Txt {
+          font-size: 16px;
+          letter-spacing: 1px;
+          line-height: 1.4;
+          margin-bottom: 18px;
+        }
+      }
+    }
+  }
+}
+
+.about-Img_Wrapper {
+  padding-bottom: 88px;
+}
+
+@include max-screen($BREAK_POINT_TABLET) {
+  .about-Img_Wrapper {
+    padding-bottom: 24px;
+  }
+}
+
+
+/*左右の矢印の位置を変える*/
+.slick-next {
+  z-index: $Z_PC_SLICK_BOTTON;
+}
+.slick-prev {
+  z-index: $Z_PC_SLICK_BOTTON;
+}
+
+.slick-slide {
+  margin-left: 30px;
+  margin-right: 30px;
+  // max-width: 760px;
+
+  /*スライド画像の横幅可変*/
+  img {
+    // margin-right: 10px;
+    display: block;
+    // width: 100%;
+    height: auto;
+    margin: 0 auto;
+    max-width: 100%;
+  }
+}
+
+@include max-screen($BREAK_POINT_TABLET) {
+  .slick-slide {
+    margin-left: 15px;
+    margin-right: 15px;
+  }
+}
+
+@include max-screen($BREAK_POINT_SP_iPhone6) {
+  .slick-slide {
+    margin-left: 5px;
+    margin-right: 5px;
+  }
+}
+
+// @media screen and (min-width:1370px) {
+//   .slick-slide {
+//     margin-right: 10px;
+//     margin-left: 10px;
+//   }
+// }

@@ -1,0 +1,580 @@
+.reserve-Mv {
+  background: url("../img/reserve/reserve-mv_bgimg.png")no-repeat center top 0;
+  //fixedはスクロール時にレイヤーを感じさせるやつ
+  //left bottom 背景画像を左下スタートで固定 http://kumacrow.blog111.fc2.com/blog-entry-296.html
+  background-size: cover;
+  //領域全体を覆う
+}
+
+.reserve-Title_Wrapper {
+  background-color: $Bg_Off_White;
+
+  .reserve-Title_Inner {
+    letter-spacing: 2px;
+    margin: 0 auto;
+    max-width: 845px;
+    padding-bottom: 60px;
+    padding-top: 49px;
+
+    .reserve-Title {
+      margin-bottom: 48px;
+      text-align: center;
+
+      h3 {
+        position: relative;
+
+        font-size: 21px;
+        letter-spacing: 1px;
+        margin: 0;
+
+        &:after {
+          position: absolute;
+          bottom: -30px;
+          // left: 31px;
+          left: 50%;
+
+          border-bottom: solid 3px $Yellow;
+          content: " ";
+          display: block;
+          transform: translateX(-50%);
+          width: 50px;
+        }
+      }
+    }
+    .reserve-Txt {
+      letter-spacing: 1px;
+      line-height: 1.9;
+      padding-bottom: 15px;
+
+      p {
+        font-size: 16px;
+
+        span {
+          position: relative;
+          top: -5px;
+
+          font-size: 10px;
+        }
+      }
+    }
+    .reserve-Txt_Attention {
+      font-size: 12px;
+      font-style: italic;
+    }
+  }
+}
+
+// アコーディオン 〜
+.reserve-Main_TitleInner {
+  background-color: $Bg_Green;
+  cursor: pointer;
+  padding: 35px 0;
+  text-align: center;
+  transition: 0.3s;
+  width: 100%;
+
+  &:hover {
+    background-color: rgba(#123007, 0.94);
+  }
+
+  p {
+    position: relative;
+
+    color: #ffffff;
+    font-size: 18px;
+
+    span {
+      position: absolute;
+      top: -1px;
+
+      background-color: #ffffff;
+      display: inline-block;
+      height: 24px;
+      transition: 0.7s;
+      width: 1px;
+
+      &:first-child {
+        transform: rotate(0deg);
+      }
+
+      &:last-child {
+        transform: rotate(90deg);
+      }
+    }
+  }
+
+  .minus {
+    span {
+      &:first-child {
+        transform: rotate(270deg);
+      }
+
+      &:last-child {
+        opacity: 0;
+        transform: rotate(-90deg);
+      }
+    }
+  }
+
+  &:first-child {
+    border-bottom: 1px solid #ffffff;
+  }
+}
+
+.reserve-Main_Wrapper.answer {
+  display: none;
+}
+
+@include max-screen($BREAK_POINT_SP_iPhone6) {
+  .reserve-Main_TitleInner {
+    background-color: $Bg_Green;
+    cursor: pointer;
+    padding: 21px 0;
+    text-align: center;
+    width: 100%;
+
+    p {
+      position: relative;
+
+      color: #ffffff;
+      font-size: 17px;
+
+      span {
+        position: absolute;
+        top: 4px;
+
+        background-color: #ffffff;
+        display: inline-block;
+        height: 16px;
+        transition: 0.7s;
+        width: 1px;
+
+        &:first-child {
+          transform: rotate(0deg);
+        }
+
+        &:last-child {
+          transform: rotate(90deg);
+        }
+      }
+    }
+
+    .minus {
+      span {
+        &:first-child {
+          transform: rotate(270deg);
+        }
+
+        &:last-child {
+          opacity: 0;
+          transform: rotate(-90deg);
+        }
+      }
+    }
+
+    &:first-child {
+      border-bottom: 1px solid #ffffff;
+    }
+  }
+}
+// 〜 アコーディオン
+
+
+
+
+.reserve-Main_Wrapper {
+  margin: 0 auto;
+  max-width: 845px;
+
+  .reserve-Main {
+    margin-bottom: 97px;
+    padding-top: 35px;
+
+    .reserve-Main_Table {
+      border-collapse: collapse;
+      text-align: left;
+      width: 100%;
+
+      .reserve-Main_Tr {
+        border-bottom: 1px $Border_Grey solid;
+        font-size: 15px;
+        line-height: 1.9;
+
+        th {
+          letter-spacing: 1px;
+          padding-bottom: 30px;
+          padding-right: 45px;
+          padding-top: 30px;
+          vertical-align: top;
+          width: 18%;
+        }
+
+        td {
+          letter-spacing: 1px;
+          padding-bottom: 30px;
+          padding-top: 30px;
+          word-break: break-all;
+
+          ul {
+            list-style: none;
+            margin: 0;
+            padding: 0;
+
+            li {
+              font-size: 11px;
+              margin-left: 1em;
+              text-indent: -1em;
+
+              &:before {
+                color: $Txt_Red;
+                content: "※";
+              }
+            }
+          }
+
+          a {
+            letter-spacing: 0;
+          }
+
+          .reserve-Main_Btn {
+            position: relative;
+
+            background-color: #111111;
+            border: 2px #000000 solid;
+            color: #ffffff;
+            display: block;
+            font-size: 16px;
+            height: 61px;
+            letter-spacing: 0;
+            margin-bottom: 13px;
+            margin-top: 8px;
+            padding: 14px 32px;
+            text-decoration: none;
+            transition: 0.2s;
+            width: 247px;
+
+
+            &:hover {
+              background-color: rgba(#000000, 0.87);
+            }
+
+            svg, .arrow-Img {
+              position: absolute;
+              top: 27px;
+              right: 32px;
+
+              transition: 0.2s;
+              width: 21px;
+            }
+
+            &:hover {
+              svg, .arrow-Img {
+                right: 28px;
+              }
+            }
+          }
+
+          .add-line-sp {
+            display: none;
+          }
+        }
+        .add-line-sp {
+          display: none;
+        }
+        .reserve-Main_Red {
+          color: $Txt_Red;
+          font-size: 14px;
+        }
+        p {
+          margin-bottom: 11px;
+          padding-top: 21px;
+        }
+
+        ul {
+          list-style: none;
+          margin: 0;
+          padding: 0 0 30px;
+
+          &:last-child {
+            padding-bottom: 0;
+          }
+        }
+      }
+    }
+  }
+}
+
+.reserve-BgImg {
+  background: url("../img/reserve/reserve-footer_bgimg.png")no-repeat center top 0;
+  background-size: cover;
+  height: 348px;
+  margin-top: 80px;
+}
+
+@include max-screen($BREAK_POINT_TABLET) {
+  .reserve-Title_Wrapper {
+    background-color: $Bg_Off_White;
+
+    .reserve-Title_Inner {
+      margin: 0 auto;
+      max-width: 845px;
+      padding: 71px 22px 25px;
+
+      .reserve-Title {
+        letter-spacing: 2px;
+        margin-bottom: 64px;
+        text-align: center;
+
+        h3 {
+          position: relative;
+
+          font-size: 28px;
+          margin: 0;
+
+          &:after {
+            position: absolute;
+            bottom: -35px;
+            // left: 31px;
+            left: 50%;
+
+            border-bottom: solid 3px $Yellow;
+            content: " ";
+            display: block;
+            transform: translateX(-50%);
+            width: 50px;
+          }
+        }
+      }
+      .reserve-Txt {
+        letter-spacing: 2px;
+        line-height: 2.1;
+        padding-bottom: 22px;
+
+        p {
+          font-size: 14px;
+        }
+      }
+    }
+  }
+
+  .reserve-Main_Wrapper {
+    margin: 0 auto;
+    max-width: 845px;
+
+    .reserve-Main {
+      padding: 21px 22px 0;
+
+      .reserve-Main_Table {
+        border-collapse: collapse;
+        text-align: left;
+        width: 100%;
+
+        .reserve-Main_Tr {
+          border-bottom: 1px $Border_Grey solid;
+          font-size: 15px;
+          line-height: 2;
+
+          th {
+            letter-spacing: 1px;
+            padding-bottom: 30px;
+            padding-right: 20px;
+            padding-top: 30px;
+            vertical-align: top;
+            width: 18%;
+          }
+          td {
+            letter-spacing: 2px;
+            padding-bottom: 30px;
+            padding-top: 30px;
+          }
+          .reserve-Main_Red {
+            color: $Txt_Red;
+            font-size: 14px;
+          }
+          p {
+            margin-bottom: 5px;
+            padding-top: 21px;
+          }
+
+          ul {
+            list-style: none;
+            margin: 0;
+            padding: 0 0 30px;
+          }
+        }
+      }
+    }
+  }
+  .reserve-BgImg {
+    background: url("../img/reserve/reserve-footer_bgimg.png")no-repeat center top 0;
+    background-size: cover;
+    height: 200px;
+    margin-top: 80px;
+  }
+}
+
+@include max-screen($BREAK_POINT_SP_iPhone6) {
+  .reserve-Title_Wrapper {
+    background-color: $Bg_Off_White;
+
+    .reserve-Title_Inner {
+      margin: 0 auto;
+      max-width: 845px;
+      padding: 46px 22px 25px;
+
+      .reserve-Title {
+        letter-spacing: 1px;
+        margin-bottom: 45px;
+        text-align: center;
+
+        h3 {
+          position: relative;
+
+          font-size: 18px;
+          margin: 0;
+
+          &:after {
+            position: absolute;
+            bottom: -25px;
+            // left: 31px;
+            left: 50%;
+
+            border-bottom: solid 3px $Yellow;
+            content: " ";
+            display: block;
+            transform: translateX(-50%);
+            width: 36px;
+          }
+        }
+      }
+      .reserve-Txt {
+        letter-spacing: 1px;
+        line-height: 1.5;
+        padding-bottom: 11px;
+
+        p {
+          font-size: 16px;
+        }
+      }
+      .reserve-Txt_Attention {
+        font-size: 11px;
+        font-style: italic;
+        letter-spacing: 0;
+      }
+    }
+  }
+
+  .reserve-Main_Wrapper {
+    margin: 0 auto;
+    max-width: 100%;
+
+    .reserve-Main {
+      margin-bottom: 38px;
+      padding: 21px 22px 0;
+
+      .reserve-Main_Table {
+        border-collapse: collapse;
+        text-align: left;
+        width: 100%;
+
+        .reserve-Main_Tr {
+          border-bottom: 1px $Border_Grey solid;
+          font-size: 15px;
+          line-height: 1.8;
+
+          th {
+            font-size: 14px;
+            letter-spacing: 0;
+            padding-bottom: 15px;
+            padding-right: 12px;
+            padding-top: 15px;
+            vertical-align: top;
+            width: 93px;
+
+            .remove-line-sp {
+              display: none;
+            }
+          }
+          td {
+            font-size: 14px;
+            letter-spacing: 0;
+            padding-bottom: 15px;
+            padding-right: 1px;
+            padding-top: 15px;
+
+            ul {
+              li {
+                font-size: 12px;
+                margin-left: 1em;
+                text-indent: -1em;
+
+                &:before {
+                  color: $Txt_Red;
+                  content: "※";
+                }
+              }
+            }
+
+            .reserve-Main_Btn {
+              position: relative;
+
+              background-color: #111111;
+              border: 1px #000000 solid;
+              color: #ffffff;
+              display: block;
+              font-size: 12px;
+              height: 43px;
+              letter-spacing: 0;
+              margin-bottom: 13px;
+              margin-top: 8px;
+              padding: 9px 32px;
+              text-decoration: none;
+              transition: 0.2s;
+              width: 100%;
+
+              &:hover {
+                background-color: rgba(#000000, 0.87);
+              }
+
+              svg, .arrow-Img {
+                position: absolute;
+                top: 17px;
+                right: 17px;
+
+                transition: 0.2s;
+                width: 11px;
+              }
+            }
+          }
+          .add-line-sp {
+            display: block;
+          }
+          .reserve-Main_Red {
+            color: $Txt_Red;
+            font-size: 12px;
+          }
+          p {
+            margin-bottom: 11px;
+            padding-top: 21px;
+          }
+
+          ul {
+            list-style: none;
+            margin: 0;
+            padding: 0 0 30px;
+          }
+
+          .reserve-letter_img {
+            padding-top: 34px;
+          }
+        }
+      }
+    }
+  }
+  .reserve-BgImg {
+    background: url("../img/reserve/reserve-footer_bgimg.png")no-repeat center top 0;
+    background-size: cover;
+    height: 121px;
+    margin-top: 52px;
+  }
+}

@@ -1,0 +1,6 @@
+mixin script(path)
+  block js
+    //- script(src="https://cdnjs.cloudflare.com/ajax/libs/barba.js/1.0.0/barba.min.js")
+    script(src=path + "assets/js/accordion.js")
+    script.
+      new WOW().init();

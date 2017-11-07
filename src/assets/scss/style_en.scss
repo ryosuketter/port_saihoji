@@ -1,0 +1,47 @@
+// ==========================================================================
+// settings
+// ==========================================================================
+@import "./en/settings/_variables.scss";
+@import "./en/settings/_zindex.scss";
+
+// ==========================================================================
+// tools
+// ==========================================================================
+@import "./en/tools/mixins/_margin.scss";
+@import "./en/tools/mixins/_mediaqueries.scss";
+
+// ==========================================================================
+// base（基本normalize.css）
+// ==========================================================================
+@import "./en/base/_normalize.scss";
+
+// ==========================================================================
+// contents（よく使うコンポーネントと各カテゴリーごとにファイルをつくる）
+// ==========================================================================
+@import "./en/contents/_opening.scss";
+@import "./en/contents/_top.scss";
+@import "./en/contents/_about.scss";
+@import "./en/contents/_access.scss";
+@import "./en/contents/_admission.scss";
+@import "./en/contents/_info.scss";
+@import "./en/contents/_reserve.scss";
+
+// @import "./contents/message/_concept.scss";
+
+// ==========================================================================
+// structures（共通部分の定義）
+// ==========================================================================
+@import "./en/structures/_footer.scss";
+@import "./en/structures/_header.scss";
+@import "./en/structures/_mv.scss";
+@import "./en/structures/_pagetop.scss";
+@import "./en/structures/_sp_header_nav.scss";
+@import "./en/structures/_toreserve.scss";
+
+// ==========================================================================
+// vendor（DLして使うファイルとか）
+// ==========================================================================
+@import "./en/vendor/animate.scss";
+@import "./en/vendor/_page_transition.scss";
+@import "./en/vendor/_slick.scss";
+@import "./en/vendor/_slick-theme.scss";

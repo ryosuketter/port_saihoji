@@ -1,0 +1,116 @@
+extend /_includes/_en/_layout_top
+append variables
+  //- Required
+  - var pageTitle= "saihoji | kokedera";
+  - var pageDescription= "The official website of Saihoji.Introduce of history,admission,access,reservation.";
+  - var pageKeywords= "saihoji";
+  //- Optional
+  - var pageOgpTitle= "saihoji | kokedera";
+  //- - var pageOgpImage= site.ogpImage
+  - var pageOgpType= "website";
+  //- Not modified
+  - var pageUrl= "index.html";
+  - var lang= "en";
+
+block meta
+  +meta('../')
+
+block content
+  //- contents
+  .top-Wrapper#pagetop
+    .top-Mv.top-MvEn
+      .top-Mv_Inner
+        header.top-Header_Wrapper.clearfix
+          h1.top-Header_Logo
+            img(src='../assets/img/top/top-header_logo.png', alt='logo')
+          nav.top-Header_Nav
+            ul.top-Header_Ul
+              li.top-Header_Li
+                a(href="about.html") #{about}
+              li.top-Header_Li
+                a(href="admission.html") #{admission}
+              li.top-Header_Li
+                a(href="information.html") #{info}
+              li.top-Header_Li
+                a(href="access.html") #{access}
+              li.top-Header_Li
+                a(href="reservation.html") #{reserve}
+
+        .top-Mv_TitleWrapper
+          h2.top-Mv_Title.wow.fadeInDown(data-wow-delay='0.5s',data-wow-duration='2s')
+            img(src='../assets/img/top/en/top-logo.png', alt='saihoji', class="top-Mv_TitleImg")
+
+        .top-Mv_NewsWrapper.font_gothic
+          p 2017.11.01:<br class="hidden_pc">SAIHOJI's official website is now published.
+
+    .top-Black_Line
+
+    .top-Message_Wrapper
+      .top-Message
+        .top-Message_Inner
+          .top-Message_TxtAllWrapper
+            .top-Message_TxtWrapper.wow.fadeInDown(data-wow-delay='0.5s',data-wow-duration='2s')
+              p.top-Message_Txt The traces of history over generations
+              p.top-Message_Txt Coexisting with the moments that never come back.
+              p.top-Message_Txt Away from the daily life, feel how time flows
+              p.top-Message_Txt.space Thinking about the ancient times bringing enlightenment.
+              p.top-Message_Txt Time is made from the past history and throughout time
+              p.top-Message_Txt I soak in the present
+            .top-Message_TxtWrapperSp.wow.fadeInDown(data-wow-delay='0.5s',data-wow-duration='2s')
+              p.top-Message_Txt The traces of history over generations
+              p.top-Message_Txt Coexisting with the moments that never come back.
+              p.top-Message_Txt.space Away from the daily life, feel how time flows
+              p.top-Message_Txt Time is made from the past history and throughout time
+              p.top-Message_Txt I soak in the present
+
+    .top-Black_Line
+
+    .top-About_Wrapper
+      .top-About
+        .top-About_Inner
+          .top-About_LeftWrapper
+            .top-About_Left
+              h2.top-About_LeftTitle.wow.fadeInDown(data-wow-delay='0.2s',data-wow-duration='2s') #{about}
+              p.top-About_LeftTxt.wow.fadeInDown(data-wow-delay='0.4s',data-wow-duration='2s') The temple, being covered in moss, it also known as a Koke-Dera or Moss Temple. The 35,000 square meter temple is currently a Natural Monument of Special Historic Sites.
+              .top-About_BtnWrapper.wow.fadeInDown(data-wow-delay='0.6s',data-wow-duration='2s')
+                a(href="about.html").top-About_Btn Read More
+                  //- include _includes/_arrow_white
+                  img(src='../assets/img/arrow.png', alt='arrow', class="arrow-Img")
+          .top-About_RightWrapper.wow.fadeInDown(data-wow-delay='0.8s',data-wow-duration='2s')
+            .top-About_Right
+              img(src='../assets/img/top/top-about_right.png', alt='saihoji', class="top-Mv_TitleImg")
+          .top-About_BottomBtnWrapper.wow.fadeInDown(data-wow-delay='0.6s',data-wow-duration='2s')
+            a(href="about.html").top-About_BottomBtn Read More
+              //- include _includes/_arrow_white
+              img(src='../assets/img/arrow.png', alt='arrow', class="arrow-Img")
+
+    .top-Link_Wrapper
+      .top-Link
+        .top-Link_Inner
+          a(href="admission.html").top-Link
+            .top-Link_LeftWrapper
+              .top-Link_Left
+                p.top-Link_Txt #{admission}
+          a(href="information.html").top-Link
+            .top-Link_RightWrapper
+              .top-Link_Right
+                p.top-Link_Txt #{info}
+
+    .top-LinkEntry_Wrapper
+      .top-LinkEntry
+        .top-LinkEntry_Inner
+          .top-LinkEntry_BtnWrapper.wow.fadeInDown(data-wow-delay='0.2s',data-wow-duration='2s')
+            a(href="reservation.html").top-LinkEntry_Btn Reservation
+              //- include _includes/_arrow_white
+              img(src='../assets/img/arrow.png', alt='arrow', class="arrow-Img")
+  //- /contents
+  <script type="text/javascript">mixpanel.track("top");</script>
+
+block footer
+  +footer('./')
+
+block sp_header_nav
+  +sp_header_nav('./')
+
+block script
+  +script('../')

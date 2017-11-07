@@ -1,0 +1,76 @@
+extend _includes/_layout
+append variables
+  //- Required
+  - var pageTitle= "西芳寺とは｜西芳寺 | 苔寺";
+  - var pageDescription= "歴史紹介や写真多く使い、魅力を訴求";
+  - var pageKeywords= "西芳寺,西芳寺とは,苔寺,京都";
+  //- Optional
+  - var pageOgpTitle= "西芳寺とは｜西芳寺 | 苔寺";
+  //- - var pageOgpImage= site.ogpImage
+  - var pageOgpType= "article";
+  //- Not modified
+  - var pageUrl= "about.html";
+  - var lang= "ja";
+
+block content
+  //- contents
+  .st-Mv_Wrapper#pagetop
+    .st-Mv.about-Mv
+      .st-Mv_Inner
+        h2.st-Mv_Title #{about}
+        .st-Mv_PageTop
+          p SCROLL
+          span.st-Mv_PageTopLine
+
+  .about-Main_Wrapper
+    .about-Main
+      .about-Main_Head
+        .about-Main_HeadInner
+          h3 西芳寺とは
+          p 京都市西部に位置する臨済宗単立寺院で、<br class="hidden_pc">山号を洪隠山と称します。<br>境内を120余種の苔が覆っていることから、<br class="hidden_pc">「苔寺」とも呼ばれています。
+      .about-Main_TxtWrapper
+        h3 西芳寺の歴史
+        p.about-Main_Txt 遡ること1,300年前の奈良時代、聖武天皇の詔により、行基菩薩が畿内四十九院の法相宗の寺として開山しました。開山前の飛鳥時代、西芳寺があった土地には聖徳太子の別荘があったといわれております。
+        p.about-Main_Txt 平安時代初期には弘法大師が一時住し、鎌倉時代初期には法然上人が浄土宗に改宗。兵乱による荒廃の後、松尾大社の宮司藤原親秀の招請で、暦応2年(1339年)に当時の高僧であり作庭の名手でもあった夢窓國師が禅寺として再興しました。
+        p.about-Main_Txt 足利義満や義政をはじめ、西芳寺を訪れて坐禅に励んだ者も多く、後に開山される金閣寺や銀閣寺など、室町時代を代表する庭園の原型になったといわれております。35,000平方メートルに達する庭園は、国の特別名勝及び史跡に指定されており、平成6年(1994年)にはUNESCOの世界文化遺産「古都京都の文化財」の1つにも登録されました。現在は境内一面を覆う苔の美しさから、通称「苔寺」としても親しまれております。
+        p.about-Main_Txt 日本の多くの禅寺は、禅宗の伝来・隆盛と機を同じくして、鎌倉時代に開山されましたが、西芳寺の開山は奈良時代の天平年間(729～749年)と伝えられており、1,200年を超える長い歴史を有しています。この歴史の長さは、宗派を変えながらも、その時代時代に根付き、人々を魅了してきた証でもあります。
+
+  .about-Img_Wrapper
+    //- スライダー
+    //- http://kenwheeler.github.io/slick/
+    .about-Img
+      div
+        img(src='assets/img/about/about-slide_img01.jpg', alt='西芳寺 苔寺 庭園')
+      div
+        img(src='assets/img/about/about-slide_img02.jpg', alt='西芳寺 苔寺 紅葉')
+      div
+        img(src='assets/img/about/about-slide_img03.jpg', alt='西芳寺 苔寺 雪景色 冬')
+      div
+        img(src='assets/img/about/about-slide_img04.jpg', alt='西芳寺 苔寺 庭園')
+      div
+        img(src='assets/img/about/about-slide_img05.jpg', alt='西芳寺 苔寺')
+      div
+        img(src='assets/img/about/about-slide_img06.jpg', alt='西芳寺 苔寺')
+      div
+        img(src='assets/img/about/about-slide_img07.jpg', alt='西芳寺 苔寺 屋根瓦')
+      div
+        img(src='assets/img/about/about-slide_img08.jpg', alt='西芳寺 苔寺')
+      div
+        img(src='assets/img/about/about-slide_img09.jpg', alt='西芳寺 苔寺 庭園')
+      div
+        img(src='assets/img/about/about-slide_img10.jpg', alt='西芳寺 苔寺 庭園')
+      div
+        img(src='assets/img/about/about-slide_img11.jpg', alt='西芳寺 苔寺 庭園')
+      div
+        img(src='assets/img/about/about-slide_img12.jpg', alt='西芳寺 苔寺')
+      div
+        img(src='assets/img/about/about-slide_img13.jpg', alt='西芳寺 苔寺 庭園')
+      div
+        img(src='assets/img/about/about-slide_img14.jpg', alt='西芳寺 苔寺 庭園')
+      div
+        img(src='assets/img/about/about-slide_img15.jpg', alt='西芳寺 苔寺 庭園')
+  <script type="text/javascript">$(function() {$('#sample').slick();});</script>
+
+  include /_includes/_toreserve
+  //- /contents
+  <script type="text/javascript">mixpanel.track("about");</script>

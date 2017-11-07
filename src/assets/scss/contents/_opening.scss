@@ -1,0 +1,241 @@
+.opening-Mv_Wrapper {
+  color: #ffffff;
+  width: 100%;
+
+  .opening-Mv {
+    background: url("../img/opening/opening-mv_bgimg.jpg")no-repeat center top 0;
+    background-size: cover; //領域全体を覆う
+    height: 100vh; //http://weboook.blog22.fc2.com/blog-entry-411.html
+
+    .opening-Mv_Inner {
+      padding-left: 9%;
+      padding-right: 12%;
+      padding-top: 20vh;
+      padding-bottom: 10px;
+
+      .opening-Mv_TxtAllWrapper {
+        position: absolute;
+        right: 13%;
+        top: 15%;
+
+        height: 350px;
+        margin-left: auto;
+        writing-mode: vertical-rl;
+
+        .opening-Mv_TxtWrapper {
+          padding-left: 10px;
+
+          &:nth-child(3) {
+            padding-left: 100px;
+          }
+
+          .opening-Mv_Txt {
+            font-size: 19px;
+            letter-spacing: 3px;
+            padding-left: 14px;
+            margin: 0;
+
+            span {
+              font-size: 29px;
+            }
+          }
+        }
+      }
+      .opening-Mv_TtlWrapper {
+        padding-top: 260px;
+      }
+      .opening-Mv_SubTxtWrapper {
+        padding-left: 13px;
+        padding-top: 18px;
+        .opening-Mv_SubTxt {
+          font-size: 14px;
+          letter-spacing: 2.2px;
+        }
+      }
+      .opening-Mv_BtnWrapper {
+        padding-left: 10px;
+        padding-top: 34px;
+
+        .opening-Mv_Btn {
+          position: relative;
+
+          border: 1px solid #ffffff;
+          border-radius: 22px;
+          color: #ffffff;
+          display: inline-block;
+          height: 49px;
+          padding: 13px;
+          text-align: center;
+          text-decoration: none;
+          width: 206px;
+
+          &:first-child {
+            margin-right: 17px;
+          }
+
+          &:hover {
+            background-color: rgba(#ffffff, 0.1);
+          }
+
+          svg {
+            position: absolute;
+            top: 17px;
+            right: 30px;
+
+            transition: 0.2s;
+          }
+
+          &:hover {
+            svg {
+              right: 24px;
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
+.opening-Mv_TtlWrapperSP, .opening-Mv_BtnWrapperSP {
+  display: none;
+}
+
+.opening_fadein {
+  animation-duration: 3s;
+  animation-fill-mode: backwards;
+  animation-name: slidein;
+}
+
+.fadein1 {
+  animation-delay: 1s;
+}
+.fadein2 {
+  animation-delay: 1.8s;
+}
+.fadein3 {
+  animation-delay: 2.6s;
+}
+.fadein4 {
+  animation-delay: 4s;
+}
+.fadein5 {
+  animation-delay: 4.5s;
+}
+.fadein6 {
+  animation-delay: 5s;
+}
+// .fadein7 {
+//   animation-delay: 5s;
+// }
+// .fadein8 {
+//   animation-delay: 5.3s;
+// }
+
+@keyframes slidein {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+@keyframes slideout {
+  100% {
+    opacity: 1;
+  }
+}
+.click_anime_out {
+  animation-name: slideout;
+}
+
+
+@include max-screen($BREAK_POINT_SP_iPhone6) {
+  .opening_fadein {
+    display: none;
+  }
+
+  .opening-Mv_Wrapper {
+    color: #ffffff;
+    height: 100%;
+    width: 100%;
+
+    .opening-Mv {
+      background: url("../img/opening/opening-mv_bgimgsp.jpg")no-repeat center top 0;
+      background-size: cover; //領域全体を覆う
+      height: 100vh; //http://weboook.blog22.fc2.com/blog-entry-411.html
+
+      .opening-Mv_Inner {
+        padding: 35% 6% 0;
+
+        .opening-Mv_TxtAllWrapper {
+          margin-left: auto;
+          writing-mode: vertical-rl;
+
+          .opening-Mv_TxtWrapper {
+            padding-left: 31px;
+          }
+        }
+      }
+    }
+  }
+
+  .opening-Mv_TtlWrapperSP {
+    display: block;
+    text-align: center;
+
+    .opening-Mv_TtlImgSP {
+      width: 46px;
+    }
+
+    .opening-Mv_SubTxtWrapperSP {
+      padding-top: 23px;
+
+      .opening-Mv_SubTxtSP {
+        font-size: 11px;
+        letter-spacing: 2px;
+      }
+    }
+  }
+  .opening-Mv_BtnWrapperSP {
+    display: block;
+    margin: 0 auto;
+    padding-top: 34px;
+
+    .opening-Mv_BtnSP {
+      position: relative;
+
+      border: 1px solid #ffffff;
+      border-radius: 22px;
+      color: #ffffff;
+      display: block;
+      height: 52px;
+      margin: 0 auto;
+      padding: 13px;
+      text-align: center;
+      text-decoration: none;
+      width: 212px;
+
+      &:first-child {
+        margin-bottom: 17px;
+      }
+
+      &:hover {
+        background-color: rgba(#ffffff, 0.1);
+      }
+
+      svg {
+        position: absolute;
+        top: 19px;
+        right: 30px;
+
+        transition: 0.2s;
+      }
+
+      &:hover {
+        svg {
+          right: 24px;
+        }
+      }
+    }
+  }
+}

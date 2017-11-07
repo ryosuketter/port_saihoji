@@ -1,0 +1,62 @@
+extend _includes/_layout
+append variables
+  //- Required
+  - var pageTitle= "事前申込｜西芳寺 | 苔寺";
+  - var pageDescription= "西芳寺の予約方法をご紹介します";
+  - var pageKeywords= "西芳寺,予約方法,苔寺,京都,予約,申込";
+  //- Optional
+  - var pageOgpTitle= "事前申込｜西芳寺 | 苔寺";
+  //- - var pageOgpImage= site.ogpImage
+  - var pageOgpType= "article";
+  //- Not modified
+  - var pageUrl= "reservation.html";
+  - var lang= "ja";
+
+block content
+  //- contents
+  .st-Mv_Wrapper#pagetop
+    .st-Mv.reserve-Mv
+      .st-Mv_Inner.reserve-Mv_Inner
+        h2.reserve-Mv_Title 往復はがきによる<br>事前申込方法
+        .st-Mv_PageTop
+          p SCROLL
+          span.st-Mv_PageTopLine
+
+  .reserve-Title_Wrapper
+    .reserve-Title_Inner
+      .reserve-Title
+        h3 事前申込制の理由
+      .reserve-Txt
+        p 西芳寺は昭和3年(1928年)より、庭園の一般公開を始めました。
+      .reserve-Txt
+        p 庭園一面を覆う120余種の苔の美しさから「苔寺」の愛称で親しまれ、戦後には大佛次郎の小説『帰郷』の舞台となり、更には昭和30年(1955年)頃より巻き起こった庭園ブームを契機として、世界各国から多くの方々がいらっしゃるようになりました。
+      .reserve-Txt
+        p 一方で、参拝される方々が増えるにつれ、徐々に「観光公害<span>*1</span>」が生じたことから、昭和45年(1970年)頃より各行政当局や近隣住民の皆様と種々対策を講じて参りました。しかし、抜本的な解決には至らず、当寺としても、観光ブームに乗じて闇雲に参拝者を増やすのではなく、寺院本来の宗教的雰囲気を保ち、皆様に心静かにお参りいただきたいという願いがあり、昭和52年(1977年)より事前申込（往復はがき）による少数参拝制を実施することと致しました。
+      .reserve-Txt
+        p 参拝者の皆様には庭園の拝観に先立ち、本堂での参拝にも参加いただいております。
+      .reserve-Txt_Attention
+        p *1  観光客増加に伴う、ゴミや自動車の排気ガスの増加、騒音や交通事故の発生等の問題
+
+  .reserve-Main_Wrapper
+    .reserve-Main
+      table.reserve-Main_Table
+        tr.reserve-Main_Tr
+          th 往復はがきによる事前申込について
+          td 参拝希望日の2ヶ月前より受け付けます。遅くとも1週間前必着で申込下さい。但し、申込多数の場合や、法要のため、参拝申込を受け付けられない日程と重なった場合は、ご希望に添えないこともございます。
+        tr.reserve-Main_Tr
+          th 申込方法
+          td ①往復はがきに参拝希望日(複数日可)、総人数、代表者の住所・氏名・連絡先を明記して下さい。尚、時間を指定した参拝はご遠慮いただいております。
+             <br>
+              ul
+                li 例年、土曜休日・梅雨及び紅葉の時期は大変多くの参拝申込をいただいておりますので、お早目の申込をおすすめしております。
+             <br>
+              p ②往復はがきが当寺到着次第、お返事を差し上げております。
+        tr.reserve-Main_Tr
+          th (往復はがき)<br class="remove-line-sp">送付先
+          td 〒615-8286 <br class="add-line-sp">京都府京都市西京区松尾神ヶ谷町56<br>西芳寺参拝係 宛<br>
+              img(src='assets/img/reserve/reserve-letter.png', alt='往復はがき', class="reserve-letter_img")
+              img(src='assets/img/reserve/reserve-lettersp.png', alt='往復はがき', class="reserve-letter_imgsp")
+
+  .reserve-BgImg
+  //- /contents
+  <script type="text/javascript">mixpanel.track("reserve");</script>

@@ -1,0 +1,113 @@
+extend /_includes/_en/_layout
+append variables
+  //- Required
+  - var pageTitle= "Reservation｜saihoji | kokedera";
+  - var pageDescription= "Introduce of how to reserve.";
+  - var pageKeywords= "saihoji,Reservation";
+  //- Optional
+  - var pageOgpTitle= "Reservation｜saihoji | kokedera";
+  //- - var pageOgpImage= site.ogpImage
+  - var pageOgpType= "article";
+  //- Not modified
+  - var pageUrl= "reservation.html";
+  - var lang= "en";
+
+block meta
+  +meta('../')
+
+block header
+  +header('../')
+
+block content
+  //- contents
+  .st-Mv_Wrapper#pagetop
+    .st-Mv.reserve-Mv
+      .st-Mv_Inner.reserve-Mv_Inner
+        h2.reserve-Mv_Title Reservation through post
+        .st-Mv_PageTop
+          p SCROLL
+          span.st-Mv_PageTopLine
+
+  .reserve-Title_Wrapper
+    .reserve-Title_Inner
+      .reserve-Title
+        h3 Why we need a pre-reservation
+      .reserve-Txt
+        p Saihoji Temple was opened to the public in 1928.
+      .reserve-Txt
+        p From the over 120 types of beautiful moss covering the whole garden, it is nicknamed Koke-Dera or Moss Temple. After the war, it became the stage for the famous novel, “Kokyō” by Osaragi Jiro, and at around 1955 there was a garden boom, triggering global attention.
+      .reserve-Txt
+        p As the number of visitors increased, “the tourist pollution<span>*1</span>” started to become a problem. In the 1970s various measures were taken by administrative authorities and neighboring residents to solve the pollution.
+      .reserve-Txt
+        p However, these ideas did not solve the fundamental problem, and so in order to keep the original religious atmosphere and let visitors pray in peace, instead of blindly increasing tourists, from 1977 we decided to implement a small-group visiting system with pre-reservation through round trip postcard (or postal mail for visitors from abroad) and participate in religious rituals at the Hondō, before reaching the garden.
+      .reserve-Txt_Attention
+        p *1 Increase in trash and exhaust gases of automobiles, and problems such as noise and traffic accidents, due to the increase in tourists.
+
+  .reserve-Main_TitleWrapper
+    .reserve-Main_TitleInner.js-Accordion
+      p.plus-minus For those living abroad　 　
+        span
+        span
+    .reserve-Main_Wrapper.answer
+      .reserve-Main
+        table.reserve-Main_Table
+          tr.reserve-Main_Tr
+            th Pre-reservation by air-mail
+            td We will accept reservations from 2 months before your desired visit date. Please send a sealed letter for your reservation so that it reaches us, latest 3 weeks before your desired date. However, if your desired date overlaps with many applications, or if we cannot perform a public worship on that day, we may not be able to accommodate your request.
+          tr.reserve-Main_Tr
+            th How to reserve
+            td For reservation, please send a sealed letter with the following three articles, to the reception.
+               <br>① Paper with a few preferred/possible visiting dates, total number of visitors, and representative’s name, address, phone number
+               ul
+                 li.reserve-Main_Red We have many reservations especially for Saturdays and holidays, Rainy season (June) and Autumn. We recommend you to apply as soon as possible.
+                 li.reserve-Main_Red Your chance of getting your preferred date will increase, with more alternative dates
+               a.reserve-Main_Btn(href="../../assets/img/reservation_form.png" download="reservation_form.png" target="_blank") Template Download
+                img(src='../../assets/img/arrow.png', alt='arrow', class="arrow-Img")
+               span ② A return envelope or postcard with a return address and name
+               ul
+                 li.reserve-Main_Red We will send you a reply, after we have received your letter.
+               span ③ One IRC (International Reply Coupon)
+               <br>
+                span Click here for more info：
+                a(href="http://www.post.japanpost.jp/int/service/int_coupon_en.html" target="_blank") http://www.post.japanpost.jp/int/service/int_coupon_en.html
+          tr.reserve-Main_Tr
+            th Address
+            td 56, Matsuo Jingatanichō, Nishikyō-ku, Kyoto, 615-8286, Japan<br>To : Saihoji Temple Worship Clerk
+
+  .reserve-Main_TitleWrapper
+    .reserve-Main_TitleInner.js-Accordion
+      p.plus-minus For those living Japan　 　
+        span
+        span
+    .reserve-Main_Wrapper.answer
+      .reserve-Main
+        table.reserve-Main_Table
+          tr.reserve-Main_Tr
+            th Pre-reservation through round trip postcard
+            td We will accept reservations from 2 months before your desired visit date. Please send a round-trip postcard for your reservation so that it reaches us, latest 1 week before your desired date. However, if your desired date overlaps with many applications, or if we cannot perform a public worship on that day, we may not be able to accommodate your request.
+          tr.reserve-Main_Tr
+            th How to reserve
+            td ① First, send us a round-trip postcard, with the date(s) you wish to visit the temple, total number of visitors, and representative’s name, address, phone number. Please note that we do not accept specific time requests for worship.
+              <br>
+              ul
+                li.reserve-Main_Red We have many reservations especially for Saturdays and holidays, Rainy season (June) and Autumn. We recommend you to apply as soon as possible.
+              span ② We will send a reply after we have received your reservation.
+              <br>
+              a.reserve-Main_Btn(href="../../assets/img/reservation_postcard.png" download="reservation_postcard.png" target="_blank") Sample Download
+               img(src='../../assets/img/arrow.png', alt='arrow', class="arrow-Img")
+          tr.reserve-Main_Tr
+            th Address
+            td 56, Matsuo Jingatanichō, Nishikyō-ku, Kyoto, 615-8286, Japan<br>To : Saihoji Temple Worship Clerk
+
+  .reserve-BgImg
+  //- /contents
+  <script type="text/javascript">mixpanel.track("reserve");</script>
+
+block footer
+  +footer('./')
+
+block sp_header_nav
+  +sp_header_nav('./')
+
+block script
+  +script('../')

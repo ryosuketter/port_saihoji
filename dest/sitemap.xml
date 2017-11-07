@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+
+<!--  created with free sitemap generation system www.sitemapxml.jp  -->
+<url>
+  <loc>http://saihoji-kokedera.com/</loc>
+  <priority>1.0</priority>
+  <lastmod>2017-09-06T17:44:05+09:00</lastmod>
+</url>
+<url>
+  <loc>http://saihoji-kokedera.com/top.html</loc>
+  <priority>0.9</priority>
+  <lastmod>2017-09-06T17:44:05+09:00</lastmod>
+</url>
+<url>
+  <loc>http://saihoji-kokedera.com/en/top.html</loc>
+  <priority>0.9</priority>
+  <lastmod>2017-09-08T11:17:20+09:00</lastmod>
+</url>
+<url>
+  <loc>http://saihoji-kokedera.com/about.html</loc>
+  <priority>0.8</priority>
+  <lastmod>2017-09-06T17:44:05+09:00</lastmod>
+</url>
+<url>
+  <loc>http://saihoji-kokedera.com/en/about.html</loc>
+  <priority>0.8</priority>
+  <lastmod>2017-09-08T11:17:20+09:00</lastmod>
+</url>
+<url>
+  <loc>http://saihoji-kokedera.com/reservation.html</loc>
+  <priority>0.7</priority>
+  <lastmod>2017-09-06T17:44:05+09:00</lastmod>
+</url>
+<url>
+  <loc>http://saihoji-kokedera.com/en/reservation.html</loc>
+  <priority>0.7</priority>
+  <lastmod>2017-09-08T11:17:20+09:00</lastmod>
+</url>
+<url>
+  <loc>http://saihoji-kokedera.com/access.html</loc>
+  <priority>0.6</priority>
+  <lastmod>2017-09-06T17:44:05+09:00</lastmod>
+</url>
+<url>
+  <loc>http://saihoji-kokedera.com/en/access.html</loc>
+  <priority>0.6</priority>
+  <lastmod>2017-09-08T11:17:20+09:00</lastmod>
+</url>
+<url>
+  <loc>http://saihoji-kokedera.com/admission.html</loc>
+  <priority>0.5</priority>
+  <lastmod>2017-09-06T17:44:05+09:00</lastmod>
+</url>
+<url>
+  <loc>http://saihoji-kokedera.com/en/admission.html</loc>
+  <priority>0.5</priority>
+  <lastmod>2017-09-08T11:17:20+09:00</lastmod>
+</url>
+<url>
+  <loc>http://saihoji-kokedera.com/information.html</loc>
+  <priority>0.4</priority>
+  <lastmod>2017-09-06T17:44:05+09:00</lastmod>
+</url>
+<url>
+  <loc>http://saihoji-kokedera.com/en/information.html</loc>
+  <priority>0.4</priority>
+  <lastmod>2017-09-08T11:17:20+09:00</lastmod>
+</url>
+</urlset>
